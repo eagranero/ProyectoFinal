@@ -1,0 +1,174 @@
+.cuerpo{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: stretch;
+	background-color: white;
+	
+
+	$seccion_mapaBackground: (
+        Recomendaciones: #8ac3ee,
+        QuienSoy:  #b4c967,
+        Contacto: #ce9175
+    );
+
+
+    @each $seccion, $bgcolor in $seccion_mapaBackground {
+            .cuerpo_secciones--bg#{$seccion} {
+            background-color: $bgcolor;
+        }
+    }
+
+
+	@mixin colorTitulo($s) {
+		@if $s == recomendaciones {
+			color : red;
+		}@else if $s == quiensoy{
+			color : blue;
+		}@else if $s == contacto {
+			color: green
+		} 
+	}
+
+	@each $seccion in recomendaciones, quiensoy, contacto {
+		.seccion_titulo--color-#{$seccion}{
+			@include colorTitulo($seccion)
+		}
+	}
+
+	@for $i from 1 through 3 {
+		.seccion_titulo--tamañoletra-#{$i}EM { font-size: 1em * $i; }
+	}
+
+
+    &__contenedorPersonal{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0%;
+		div{
+			width: 100%;
+			overflow: hidden;
+			.indicadoresCentrados{ 
+				margin: 0%;
+				background-color: rgba(0, 0, 0, 0.2);
+				li{
+					background-color: white;
+				}
+			}
+			.indicadoresAtrasAdelante{
+				width: 30px;
+				height: 30px;
+				background-color: rgba(0, 0, 0, 0.2);
+				background-size: 75%;
+				border-radius: 15px;
+			}
+			img{
+				width: 100%;
+			}
+		}
+	}
+	&__conenedorImagenesCategorias{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-color: rgb(255, 245, 227);
+		width: 100%;
+		a{
+			text-decoration: none;
+			text-align: center;
+			color: black;
+			font-size:1.5em;
+			letter-spacing: 0.1em;
+			margin: 2px;
+			img{
+				width: 100%;
+			}
+		}
+		div{
+			transition: transform 0.25s;
+		}
+		div:hover{
+			transform:scale(1.1,1.1); 
+	   }
+	}
+	&__recomendaciones{ 
+		div{
+			display: flex;
+			flex-direction: row;
+			img{
+				width: 20%;
+				margin-bottom: 10px ;
+			}
+			p{
+				padding: 50px 0px ;
+			}
+		}
+	}
+
+	&__secciones{
+		padding: 1%;
+		&--formatoTituloSeccion{
+			color: red;
+			font-size:1em;
+			letter-spacing: 0.1em;
+		}
+		&--formatoTextoContenido{
+			color: rgb(100, 100, 100);
+			font-size:1.5em;
+		}
+	}
+	
+
+	table {
+		border-collapse: collapse;
+		border-color: blue;
+		th {
+			background-color:blue;
+			color: white;
+		}
+	}
+
+	form{
+		.centrado{
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			padding-inline: 0px;
+		}
+	}
+}
+
+
+ 
+
+
+
+/*MOBILE**********************************/
+
+@media only screen and (max-width: 480px) {
+
+	.cuerpo{
+		&__contenedorPersonal{
+			flex-direction: column;
+		}
+		&__conenedorImagenesCategorias{
+			flex-direction: column;
+			a{
+				font-size:3.5em;
+				letter-spacing: 0.1em;
+				margin: 2px;
+			}
+		}
+
+		form{
+			.centrado{
+				margin-left: 2%;
+				margin-right: 2%;
+				text-align: center;
+				padding-inline: 0px;
+			}
+		}
+
+	}
+}

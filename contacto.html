@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eduardo Granero</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+  </head>
+
+  <body>
+
+  	<header>
+	  	<div class="encabezado">
+				<p class="encabezado__texto encabezado__texto--titulo">FLORENCIA<span>ZINI</span></p>
+				<p class="encabezado__texto encabezado__texto--subtitulo">LICENCIADA EN NUTRICIÓN</p>
+		</div>
+
+
+	   	
+	    <nav class="menu navbar navbar-expand-lg navbar-light">
+		   		
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		   	</button>
+		   	<div class="collapse navbar-collapse" id="navbarScroll">
+		    	<ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll menu__lista" style="max-height: 200px;">
+		      		<li class="nav-item item_inactivo"><a class="menu__lista--formatoTexto" href="index.html">INICIO </a></li>
+		       		<li class="nav-item item_inactivo"><a class="menu__lista--formatoTexto" href="quien_soy.html">QUIEN SOY</a></li>
+		       		<li class="nav-item item_inactivo"><a class="menu__lista--formatoTexto" href="recomendaciones.html">RECOMENDACIONES</a></li>
+		       		<li class="nav-item item_activo"><a class="menu__lista--formatoTexto" href="contacto.html">CONTACTO</a></li>
+		       	</ul>
+			</div>
+	  	</nav>
+	   	
+   	</header>
+	
+	<div class="cuerpo"><!--Formulario de contacto-->
+		<div class="cuerpo__secciones cuerpo__contacto cuerpo_secciones--bgContacto">
+			<h1 class="cuerpo__secciones--formatoTituloSeccion seccion_titulo--color-contacto seccion_titulo--tamañoletra-3EM">Contacto:</h1>
+			
+			<form method="POST" action="/index.php" class="needs-validation" novalidate>
+
+				<div class="form-row">
+					<div class="col-md-6 mb-3 centrado">
+						<input type="text" class="form-control" id="validarNombre" name="validarNombre" placeholder="Nombres" required>
+					</div>
+				</div>
+			
+				<div class="form-row">
+					<div class="col-md-6 mb-3 centrado">
+						<input type="text" class="form-control" id="validarApellidos" name="validarApellidos" placeholder="Apellido" required>
+					</div>
+				</div>
+			
+				<div class="form-row">
+					<div class="col-md-6 mb-3 centrado">
+						<input type="email" class="form-control" id="validarEmail" name="validarEmail" placeholder="Email" required>
+					</div>
+				</div>
+			
+				<div class="form-row">
+					<div class="col-md-6 mb-3 centrado">
+						<input type="number" class="form-control" id="validarTelefono" name="validarTelefono" min="111111" placeholder="Telefono">
+					</div>
+				</div>
+			
+				<div class="form-row">
+					<div class="col-md-6 mb-3 centrado">
+						<select class="custom-select" id="validarTema" name="validarTema" required>
+							<option selected disabled value="">Selecciona...</option>
+							<option value="educacion"> Consulta nutricional </option>
+							<option value="educacion"> Educacion </option>
+							<option value="educacion"> Yoga y bienestar </option>
+							<option value="Otro"> Otro </option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-md-6 mb-3 centrado">
+						<textarea class="form-control" id="validationMensaje" name="validationMensaje" rows="3" min="25" placeholder="Ingresa tu mensaje" required></textarea>
+					</div>
+				</div>
+			
+				<div class="form-row">
+					<div class="col-md-6 mb-10 centrado">
+						<button class="btn btn-primary" type="submit" name="submit">Enviar</button>
+						<button class="btn btn-success" type="reset" name="reset">Limpiar</button>
+					</div>
+				</div>
+			
+			</form>
+
+			
+
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		<div class="footer__datosContacto">
+			<p>Lic Florencia Zini</p>
+			<p>Matricula: 12321</p>
+			<p>Email: lic.florenciazini@gmail.com</p>
+			<p>Telefono: (011) 411222333</p>
+		</div> 
+		
+		<div class="footer__datosDesarrollador">
+			<p>By Eduardo Granero.</p>
+			<p>E-mail: eduardogranero@gmail.com </p>
+		</div>	
+	</footer>
+
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script>
+		(function() {
+			'use strict';
+			window.addEventListener('load', function() {
+				var forms = document.getElementsByClassName('needs-validation');
+				var validation = Array.prototype.filter.call(forms, function(form) {
+					form.addEventListener('submit', function(event) {
+						if (form.checkValidity() === false) {
+							event.preventDefault();
+							event.stopPropagation();
+						}
+						form.classList.add('was-validated');
+					}, false);
+				});
+			}, false);
+		})();
+	</script>
+  </body>
+</html>

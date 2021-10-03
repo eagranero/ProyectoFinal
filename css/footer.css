@@ -1,0 +1,56 @@
+/*PIE**********************************/
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 200px;
+  margin-top: 15px;
+}
+
+.footer__datosContacto {
+  background-color: #463c32;
+  width: 60%;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 10px;
+  font-size: 2em;
+}
+
+.footer__datosDesarrollador {
+  background-color: #463c32;
+  width: 40%;
+  text-align: right;
+  padding-top: 50px;
+  padding-right: 10px;
+}
+
+/*MOBILE**********************************/
+@media only screen and (max-width: 480px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__datosContacto {
+    height: 120px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer__datosDesarrollador {
+    height: 120px;
+    width: 100%;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

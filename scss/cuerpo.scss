@@ -1,5 +1,6 @@
 .cuerpo{
 	display: flex;
+	flex: 1;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: stretch;
@@ -13,6 +14,7 @@
 		div{
 			width: 100%;
 			overflow: hidden;
+			height: 70vh;
 			.indicadoresCentrados{ 
 				margin: 0%;
 				background-color: rgba(0, 0, 0, 0.2);
@@ -27,8 +29,12 @@
 				background-size: 75%;
 				border-radius: 15px;
 			}
-			img{
-				width: 100%;
+			.imagenPersonal {
+				display: flex;
+				align-items: flex-start;
+				.img{
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -51,6 +57,7 @@
 		}
 		div{
 			transition: transform 0.25s;
+			margin: 5%;
 		}
 		div:hover{
 			transform:scale(1.1,1.1); 

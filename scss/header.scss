@@ -6,7 +6,7 @@ header{
 	flex-wrap: nowrap;
 	background-color: #aaaaaa;
 	.encabezado{
-		height: 150px;
+		height: 140px;
 		margin: 0% ;
 		background-image: url("../media/head2.jpg");
 		background-size: 100% ;
@@ -17,9 +17,9 @@ header{
 			text-shadow: black 0.1em 0.1em 0.2em;
 			margin-bottom: 0px;
 			&--titulo{
-				margin-top: 50px;
+				margin-top: 40px;
 				letter-spacing: 15px;
-				font-size:3em;
+				font-size:4em;
 				span{
 					font-weight: 700;
 				}
@@ -36,23 +36,23 @@ header{
 		
 		background-color: rgb(116, 104, 77);
 		padding: 0px;
-		height: 40px;
+		height: 35px;
 
 		.item{
 			&_activo{
 				background: linear-gradient(180deg, rgb(150, 134, 93), rgb(14, 12, 8));
 				width: 25%;
 				text-align: center;
-				height: 40px;
-				padding-top: 9px;
+				height: 35px;
+				padding-top: 6px;
 				border-top-left-radius: 20px;
 				border-top-right-radius: 20px;
 			}
 			&_inactivo{
 				width: 25%;
 				text-align: center;
-				height: 40px;
-				padding-top: 9px;
+				height: 35px;
+				padding-top: 6px;
 			}
 		}
 

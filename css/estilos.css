@@ -7,10 +7,7 @@
 
 body {
   font-size: 10px;
-  background-image: url("../media/fondo2.jpg");
-  background-repeat: repeat;
-  background-size: 20%;
-  background-attachment: fixed;
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,7 +15,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10px 15%;
+  margin: 0px;
+  width: 99.9%;
 }
 
 p {
@@ -48,7 +46,7 @@ header {
 }
 
 header .encabezado {
-  height: 150px;
+  height: 140px;
   margin: 0%;
   background-image: url("../media/head2.jpg");
   background-size: 100%;
@@ -63,9 +61,9 @@ header .encabezado__texto {
 }
 
 header .encabezado__texto--titulo {
-  margin-top: 50px;
+  margin-top: 40px;
   letter-spacing: 15px;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 header .encabezado__texto--titulo span {
@@ -82,7 +80,7 @@ header .encabezado__texto--subtitulo {
 header .menu {
   background-color: #74684d;
   padding: 0px;
-  height: 40px;
+  height: 35px;
 }
 
 header .menu .item_activo {
@@ -90,8 +88,8 @@ header .menu .item_activo {
   background: linear-gradient(180deg, #96865d, #0e0c08);
   width: 25%;
   text-align: center;
-  height: 40px;
-  padding-top: 9px;
+  height: 35px;
+  padding-top: 6px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -99,8 +97,8 @@ header .menu .item_activo {
 header .menu .item_inactivo {
   width: 25%;
   text-align: center;
-  height: 40px;
-  padding-top: 9px;
+  height: 35px;
+  padding-top: 6px;
 }
 
 header .menu__lista {
@@ -200,6 +198,9 @@ header .menu__lista--formatoTexto:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -229,6 +230,7 @@ header .menu__lista--formatoTexto:hover {
 .cuerpo__contenedorPersonal div {
   width: 100%;
   overflow: hidden;
+  height: 70vh;
 }
 
 .cuerpo__contenedorPersonal div .indicadoresCentrados {
@@ -248,8 +250,14 @@ header .menu__lista--formatoTexto:hover {
   border-radius: 15px;
 }
 
-.cuerpo__contenedorPersonal div img {
+.cuerpo__contenedorPersonal div .imagenPersonal {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cuerpo__conenedorImagenesCategorias {
@@ -285,6 +293,7 @@ header .menu__lista--formatoTexto:hover {
   transition: -webkit-transform 0.25s;
   transition: transform 0.25s;
   transition: transform 0.25s, -webkit-transform 0.25s;
+  margin: 5%;
 }
 
 .cuerpo__conenedorImagenesCategorias div:hover {

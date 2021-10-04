@@ -13,7 +13,7 @@ header {
 }
 
 header .encabezado {
-  height: 150px;
+  height: 140px;
   margin: 0%;
   background-image: url("../media/head2.jpg");
   background-size: 100%;
@@ -28,9 +28,9 @@ header .encabezado__texto {
 }
 
 header .encabezado__texto--titulo {
-  margin-top: 50px;
+  margin-top: 40px;
   letter-spacing: 15px;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 header .encabezado__texto--titulo span {
@@ -47,7 +47,7 @@ header .encabezado__texto--subtitulo {
 header .menu {
   background-color: #74684d;
   padding: 0px;
-  height: 40px;
+  height: 35px;
 }
 
 header .menu .item_activo {
@@ -55,8 +55,8 @@ header .menu .item_activo {
   background: linear-gradient(180deg, #96865d, #0e0c08);
   width: 25%;
   text-align: center;
-  height: 40px;
-  padding-top: 9px;
+  height: 35px;
+  padding-top: 6px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -64,8 +64,8 @@ header .menu .item_activo {
 header .menu .item_inactivo {
   width: 25%;
   text-align: center;
-  height: 40px;
-  padding-top: 9px;
+  height: 35px;
+  padding-top: 6px;
 }
 
 header .menu__lista {

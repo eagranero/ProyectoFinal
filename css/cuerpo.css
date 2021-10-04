@@ -2,6 +2,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -31,6 +34,7 @@
 .cuerpo__contenedorPersonal div {
   width: 100%;
   overflow: hidden;
+  height: 70vh;
 }
 
 .cuerpo__contenedorPersonal div .indicadoresCentrados {
@@ -50,7 +54,16 @@
   border-radius: 15px;
 }
 
-.cuerpo__contenedorPersonal div img {
+.cuerpo__contenedorPersonal div .imagenPersonal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.cuerpo__contenedorPersonal div .imagenPersonal .img {
   width: 100%;
 }
 
@@ -87,6 +100,7 @@
   transition: -webkit-transform 0.25s;
   transition: transform 0.25s;
   transition: transform 0.25s, -webkit-transform 0.25s;
+  margin: 5%;
 }
 
 .cuerpo__conenedorImagenesCategorias div:hover {

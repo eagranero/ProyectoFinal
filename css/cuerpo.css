@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .cuerpo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,42 +12,6 @@
       -ms-flex-align: stretch;
           align-items: stretch;
   background-color: white;
-}
-
-.cuerpo .cuerpo_secciones--bgRecomendaciones {
-  background-color: #8ac3ee;
-}
-
-.cuerpo .cuerpo_secciones--bgQuienSoy {
-  background-color: #b4c967;
-}
-
-.cuerpo .cuerpo_secciones--bgContacto {
-  background-color: #ce9175;
-}
-
-.cuerpo .seccion_titulo--color-recomendaciones {
-  color: red;
-}
-
-.cuerpo .seccion_titulo--color-quiensoy {
-  color: blue;
-}
-
-.cuerpo .seccion_titulo--color-contacto {
-  color: green;
-}
-
-.cuerpo .seccion_titulo--tamañoletra-1EM {
-  font-size: 1em;
-}
-
-.cuerpo .seccion_titulo--tamañoletra-2EM {
-  font-size: 2em;
-}
-
-.cuerpo .seccion_titulo--tamañoletra-3EM {
-  font-size: 3em;
 }
 
 .cuerpo__contenedorPersonal {
@@ -156,7 +119,7 @@
 
 .cuerpo__secciones--formatoTituloSeccion {
   color: red;
-  font-size: 1em;
+  font-size: 3em;
   letter-spacing: 0.1em;
 }
 

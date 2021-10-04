@@ -5,42 +5,6 @@
 	align-items: stretch;
 	background-color: white;
 	
-
-	$seccion_mapaBackground: (
-        Recomendaciones: #8ac3ee,
-        QuienSoy:  #b4c967,
-        Contacto: #ce9175
-    );
-
-
-    @each $seccion, $bgcolor in $seccion_mapaBackground {
-            .cuerpo_secciones--bg#{$seccion} {
-            background-color: $bgcolor;
-        }
-    }
-
-
-	@mixin colorTitulo($s) {
-		@if $s == recomendaciones {
-			color : red;
-		}@else if $s == quiensoy{
-			color : blue;
-		}@else if $s == contacto {
-			color: green
-		} 
-	}
-
-	@each $seccion in recomendaciones, quiensoy, contacto {
-		.seccion_titulo--color-#{$seccion}{
-			@include colorTitulo($seccion)
-		}
-	}
-
-	@for $i from 1 through 3 {
-		.seccion_titulo--tamañoletra-#{$i}EM { font-size: 1em * $i; }
-	}
-
-
     &__contenedorPersonal{
 		display: flex;
 		flex-direction: row;
@@ -110,7 +74,7 @@
 		padding: 1%;
 		&--formatoTituloSeccion{
 			color: red;
-			font-size:1em;
+			font-size:3em;
 			letter-spacing: 0.1em;
 		}
 		&--formatoTextoContenido{

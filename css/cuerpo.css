@@ -147,8 +147,8 @@
   display: grid;
   -ms-grid-columns: 1fr 2fr 2fr 2fr 1fr;
       grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-  -ms-grid-rows: 100px 200px 200px 200px 200px 200px 200px 200px;
-      grid-template-rows: 100px 200px 200px 200px 200px 200px 200px 200px;
+  -ms-grid-rows: 100px 220px 220px 220px 220px 220px 220px 220px;
+      grid-template-rows: 100px 220px 220px 220px 220px 220px 220px 220px;
       grid-template-areas: "margenIzq0 tituloDocencia tituloDocencia tituloDocencia margenDer0"  "margenIzq1 texto1 texto1 imagen1 margenDer1" "margenIzq2 imagen2 texto2 texto2 margenDer2" "margenIzq3 texto3 texto3 imagen3 margenDer3" "margenIzq4 imagen4 texto4 texto4 margenDer4" "margenIzq5 texto5 texto5 imagen5 margenDer5" "margenIzq6 imagen6 texto6 texto6 margenDer6" "margenIzq7 texto7 texto7 imagen7 margenDer7";
 }
 
@@ -161,9 +161,10 @@
 
 .cuerpo__seccionDocencia .tituloDocencia h1 {
   padding-top: 25px;
-  font-size: 5em;
+  font-size: 6em;
   letter-spacing: 0.1em;
   font-weight: 700;
+  text-shadow: grey 0.1em 0.1em 0.2em;
 }
 
 .cuerpo__seccionDocencia_texto1 {
@@ -173,9 +174,32 @@
   grid-area: texto1;
   background-color: #ffeaaf;
   margin: 10px 5px;
-  padding: 30px;
+  padding: 15px;
   border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
   text-align: right;
+}
+
+.cuerpo__seccionDocencia_texto1 div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cuerpo__seccionDocencia_texto1 h2 {
+  font-size: 4em;
+  letter-spacing: 0.1em;
+}
+
+.cuerpo__seccionDocencia_texto1 h3 {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+.cuerpo__seccionDocencia_texto1 p {
+  font-size: 1em;
+  letter-spacing: 0.1em;
 }
 
 .cuerpo__seccionDocencia_texto2 {
@@ -185,9 +209,32 @@
   grid-area: texto2;
   background-color: #ffeaaf;
   margin: 10px 5px;
-  padding: 30px;
+  padding: 15px;
   border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
   text-align: left;
+}
+
+.cuerpo__seccionDocencia_texto2 div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cuerpo__seccionDocencia_texto2 h2 {
+  font-size: 4em;
+  letter-spacing: 0.1em;
+}
+
+.cuerpo__seccionDocencia_texto2 h3 {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+.cuerpo__seccionDocencia_texto2 p {
+  font-size: 1em;
+  letter-spacing: 0.1em;
 }
 
 .cuerpo__seccionDocencia_texto3 {
@@ -197,9 +244,32 @@
   grid-area: texto3;
   background-color: #ffeaaf;
   margin: 10px 5px;
-  padding: 30px;
+  padding: 15px;
   border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
   text-align: right;
+}
+
+.cuerpo__seccionDocencia_texto3 div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cuerpo__seccionDocencia_texto3 h2 {
+  font-size: 4em;
+  letter-spacing: 0.1em;
+}
+
+.cuerpo__seccionDocencia_texto3 h3 {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+.cuerpo__seccionDocencia_texto3 p {
+  font-size: 1em;
+  letter-spacing: 0.1em;
 }
 
 .cuerpo__seccionDocencia_texto4 {
@@ -209,9 +279,32 @@
   grid-area: texto4;
   background-color: #ffeaaf;
   margin: 10px 5px;
-  padding: 30px;
+  padding: 15px;
   border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
   text-align: left;
+}
+
+.cuerpo__seccionDocencia_texto4 div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cuerpo__seccionDocencia_texto4 h2 {
+  font-size: 4em;
+  letter-spacing: 0.1em;
+}
+
+.cuerpo__seccionDocencia_texto4 h3 {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+.cuerpo__seccionDocencia_texto4 p {
+  font-size: 1em;
+  letter-spacing: 0.1em;
 }
 
 .cuerpo__seccionDocencia_texto5 {
@@ -221,9 +314,32 @@
   grid-area: texto5;
   background-color: #ffeaaf;
   margin: 10px 5px;
-  padding: 30px;
+  padding: 15px;
   border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
   text-align: right;
+}
+
+.cuerpo__seccionDocencia_texto5 div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cuerpo__seccionDocencia_texto5 h2 {
+  font-size: 4em;
+  letter-spacing: 0.1em;
+}
+
+.cuerpo__seccionDocencia_texto5 h3 {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+.cuerpo__seccionDocencia_texto5 p {
+  font-size: 1em;
+  letter-spacing: 0.1em;
 }
 
 .cuerpo__seccionDocencia_texto6 {
@@ -233,9 +349,32 @@
   grid-area: texto6;
   background-color: #ffeaaf;
   margin: 10px 5px;
-  padding: 30px;
+  padding: 15px;
   border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
   text-align: left;
+}
+
+.cuerpo__seccionDocencia_texto6 div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cuerpo__seccionDocencia_texto6 h2 {
+  font-size: 4em;
+  letter-spacing: 0.1em;
+}
+
+.cuerpo__seccionDocencia_texto6 h3 {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+.cuerpo__seccionDocencia_texto6 p {
+  font-size: 1em;
+  letter-spacing: 0.1em;
 }
 
 .cuerpo__seccionDocencia_texto7 {
@@ -245,9 +384,32 @@
   grid-area: texto7;
   background-color: #ffeaaf;
   margin: 10px 5px;
-  padding: 30px;
+  padding: 15px;
   border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
   text-align: right;
+}
+
+.cuerpo__seccionDocencia_texto7 div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cuerpo__seccionDocencia_texto7 h2 {
+  font-size: 4em;
+  letter-spacing: 0.1em;
+}
+
+.cuerpo__seccionDocencia_texto7 h3 {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+.cuerpo__seccionDocencia_texto7 p {
+  font-size: 1em;
+  letter-spacing: 0.1em;
 }
 
 .cuerpo__seccionDocencia_imagen1 {

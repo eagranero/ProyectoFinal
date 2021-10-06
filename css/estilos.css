@@ -251,13 +251,16 @@ header .menu__lista--formatoTexto:hover {
 }
 
 .cuerpo__contenedorPersonal div .imagenPersonal {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.cuerpo__contenedorPersonal div .imagenPersonal .img {
+  width: 100%;
 }
 
 .cuerpo__conenedorImagenesCategorias {
@@ -320,19 +323,190 @@ header .menu__lista--formatoTexto:hover {
   padding: 50px 0px;
 }
 
-.cuerpo__secciones {
+.cuerpo__seccion {
   padding: 1%;
 }
 
-.cuerpo__secciones--formatoTituloSeccion {
+.cuerpo__seccion--formatoTituloSeccion {
   color: red;
-  font-size: 3em;
+  font-size: 5em;
   letter-spacing: 0.1em;
 }
 
-.cuerpo__secciones--formatoTextoContenido {
+.cuerpo__seccion--formatoTextoContenido {
   color: #646464;
   font-size: 1.5em;
+}
+
+.cuerpo__seccionDocencia {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 2fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  -ms-grid-rows: 100px 200px 200px 200px 200px 200px 200px 200px;
+      grid-template-rows: 100px 200px 200px 200px 200px 200px 200px 200px;
+      grid-template-areas: "margenIzq0 tituloDocencia tituloDocencia tituloDocencia margenDer0"  "margenIzq1 texto1 texto1 imagen1 margenDer1" "margenIzq2 imagen2 texto2 texto2 margenDer2" "margenIzq3 texto3 texto3 imagen3 margenDer3" "margenIzq4 imagen4 texto4 texto4 margenDer4" "margenIzq5 texto5 texto5 imagen5 margenDer5" "margenIzq6 imagen6 texto6 texto6 margenDer6" "margenIzq7 texto7 texto7 imagen7 margenDer7";
+}
+
+.cuerpo__seccionDocencia .tituloDocencia {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: tituloDocencia;
+}
+
+.cuerpo__seccionDocencia .tituloDocencia h1 {
+  padding-top: 25px;
+  font-size: 5em;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.cuerpo__seccionDocencia_texto1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: texto1;
+  background-color: #ffeaaf;
+  margin: 10px 5px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: right;
+}
+
+.cuerpo__seccionDocencia_texto2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: texto2;
+  background-color: #ffeaaf;
+  margin: 10px 5px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.cuerpo__seccionDocencia_texto3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: texto3;
+  background-color: #ffeaaf;
+  margin: 10px 5px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: right;
+}
+
+.cuerpo__seccionDocencia_texto4 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: texto4;
+  background-color: #ffeaaf;
+  margin: 10px 5px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.cuerpo__seccionDocencia_texto5 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: texto5;
+  background-color: #ffeaaf;
+  margin: 10px 5px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: right;
+}
+
+.cuerpo__seccionDocencia_texto6 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: texto6;
+  background-color: #ffeaaf;
+  margin: 10px 5px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.cuerpo__seccionDocencia_texto7 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: texto7;
+  background-color: #ffeaaf;
+  margin: 10px 5px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: right;
+}
+
+.cuerpo__seccionDocencia_imagen1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: imagen1;
+  margin: 10px 5px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cuerpo__seccionDocencia_imagen2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: imagen2;
+  margin: 10px 5px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cuerpo__seccionDocencia_imagen3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: imagen3;
+  margin: 10px 5px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cuerpo__seccionDocencia_imagen4 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: imagen4;
+  margin: 10px 5px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cuerpo__seccionDocencia_imagen5 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: imagen5;
+  margin: 10px 5px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cuerpo__seccionDocencia_imagen6 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
+  grid-area: imagen6;
+  margin: 10px 5px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cuerpo__seccionDocencia_imagen7 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 4;
+  grid-area: imagen7;
+  margin: 10px 5px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .cuerpo table {

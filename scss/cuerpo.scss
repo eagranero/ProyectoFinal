@@ -77,16 +77,66 @@
 		}
 	}
 
-	&__secciones{
+	&__seccion{
 		padding: 1%;
 		&--formatoTituloSeccion{
 			color: red;
-			font-size:3em;
+			font-size:5em;
 			letter-spacing: 0.1em;
 		}
 		&--formatoTextoContenido{
 			color: rgb(100, 100, 100);
 			font-size:1.5em;
+		}
+
+		&Docencia{
+			display: grid;
+			grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+			grid-template-rows: 100px 200px 200px 200px 200px 200px 200px 200px;
+			grid-template-areas:
+			"margenIzq0 tituloDocencia tituloDocencia tituloDocencia margenDer0" 
+			"margenIzq1 texto1 texto1 imagen1 margenDer1"
+			"margenIzq2 imagen2 texto2 texto2 margenDer2"
+			"margenIzq3 texto3 texto3 imagen3 margenDer3"
+			"margenIzq4 imagen4 texto4 texto4 margenDer4"
+			"margenIzq5 texto5 texto5 imagen5 margenDer5"
+			"margenIzq6 imagen6 texto6 texto6 margenDer6"
+			"margenIzq7 texto7 texto7 imagen7 margenDer7";
+
+			.tituloDocencia{
+				grid-area: tituloDocencia;
+				h1{
+					padding-top: 25px;
+					font-size: 5em;
+					letter-spacing: 0.1em;
+					font-weight: 700;
+				}
+			}
+
+			@for $i from 1 through 7 {
+				&_texto#{$i} { 
+					grid-area: texto#{$i};
+					background-color: rgb(255, 234, 175);
+					margin: 10px 5px;
+					padding: 30px;
+					border-radius: 20px; 
+					@if $i % 2 == 0
+					{
+						text-align: left;
+					} @else{
+						text-align: right;
+					}
+				}
+			}
+
+			@for $i from 1 through 7 {
+				&_imagen#{$i} { 
+					grid-area: imagen#{$i};
+					margin: 10px 5px;
+					border-radius: 20px;
+					overflow: hidden;
+				}
+			}
 		}
 	}
 	

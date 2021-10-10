@@ -30,8 +30,8 @@
 				border-radius: 15px;
 			}
 			.imagenPersonal {
-				display: flex;
-				align-items: flex-start;
+				/*display: flex;
+				align-items: flex-start;*/
 				.img{
 					width: 100%;
 				}
@@ -102,7 +102,7 @@
 			"margenIzq5 texto5 texto5 imagen5 margenDer5"
 			"margenIzq6 imagen6 texto6 texto6 margenDer6"
 			"margenIzq7 texto7 texto7 imagen7 margenDer7";
-
+			
 			.tituloDocencia{
 				grid-area: tituloDocencia;
 				h1{
@@ -117,10 +117,9 @@
 			@for $i from 1 through 7 {
 				&_texto#{$i} { 
 					grid-area: texto#{$i};
-					background-color: rgb(255, 234, 175);
+					background-color: rgb(255, 245, 227);
 					margin: 10px 5px;
 					padding: 15px;
-					border-radius: 20px;
 					display: grid; 
 					@if $i % 2 == 0
 					{
@@ -134,7 +133,7 @@
 					}
 
 					h2{
-						font-size: 4em;
+						font-size: 3em;
 						letter-spacing: 0.1em;
 					}
 					h3{
@@ -153,7 +152,6 @@
 				&_imagen#{$i} { 
 					grid-area: imagen#{$i};
 					margin: 10px 5px;
-					border-radius: 20px;
 					overflow: hidden;
 				}
 			}

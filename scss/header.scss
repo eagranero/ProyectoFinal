@@ -4,17 +4,17 @@ header{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	background-color: #aaaaaa;
+	background-image: url("../media/head2.jpg");
+	background-size: 100% ;
 	.encabezado{
 		height: 140px;
 		margin: 0% ;
-		background-image: url("../media/head2.jpg");
-		background-size: 100% ;
+
 		text-align: center;
 		&__texto{
 			color: white;
 			overflow: hidden;
-			text-shadow: black 0.1em 0.1em 0.2em;
+				
 			margin-bottom: 0px;
 			&--titulo{
 				margin-top: 40px;
@@ -34,26 +34,35 @@ header{
 	}
 	.menu{
 		
-		background-color: rgb(116, 104, 77);
+		background-color: rgba(116, 104, 77, 0.479);
 		padding: 0px;
 		height: 35px;
 
 		.item{
-			&_activo{
-				background: linear-gradient(180deg, rgb(150, 134, 93), rgb(14, 12, 8));
-				width: 25%;
-				text-align: center;
-				height: 35px;
-				padding-top: 6px;
-				border-top-left-radius: 20px;
-				border-top-right-radius: 20px;
-			}
-			&_inactivo{
-				width: 25%;
+			&_texto{
+				width: 15%;
 				text-align: center;
 				height: 35px;
 				padding-top: 6px;
 			}
+			&_icono{
+				width: 5%;
+				text-align: center;
+				height: 30px;
+			}
+		}
+		.opcionesContacto{
+			display: flex;
+			flex-direction: row;
+			width: 65%;
+			justify-content: end;
+			div{
+				width: 5%;
+			}
+		}
+		.iconoMenu{
+			height: 90%;
+			padding-top: 5%;
 		}
 
 		&__lista{

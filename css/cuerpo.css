@@ -55,12 +55,8 @@
 }
 
 .cuerpo__contenedorPersonal div .imagenPersonal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  /*display: flex;
+				align-items: flex-start;*/
 }
 
 .cuerpo__contenedorPersonal div .imagenPersonal .img {
@@ -172,10 +168,9 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: texto1;
-  background-color: #ffeaaf;
+  background-color: #fff5e3;
   margin: 10px 5px;
   padding: 15px;
-  border-radius: 20px;
   display: -ms-grid;
   display: grid;
   text-align: right;
@@ -188,7 +183,7 @@
 }
 
 .cuerpo__seccionDocencia_texto1 h2 {
-  font-size: 4em;
+  font-size: 3em;
   letter-spacing: 0.1em;
 }
 
@@ -207,10 +202,9 @@
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: texto2;
-  background-color: #ffeaaf;
+  background-color: #fff5e3;
   margin: 10px 5px;
   padding: 15px;
-  border-radius: 20px;
   display: -ms-grid;
   display: grid;
   text-align: left;
@@ -223,7 +217,7 @@
 }
 
 .cuerpo__seccionDocencia_texto2 h2 {
-  font-size: 4em;
+  font-size: 3em;
   letter-spacing: 0.1em;
 }
 
@@ -242,10 +236,9 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: texto3;
-  background-color: #ffeaaf;
+  background-color: #fff5e3;
   margin: 10px 5px;
   padding: 15px;
-  border-radius: 20px;
   display: -ms-grid;
   display: grid;
   text-align: right;
@@ -258,7 +251,7 @@
 }
 
 .cuerpo__seccionDocencia_texto3 h2 {
-  font-size: 4em;
+  font-size: 3em;
   letter-spacing: 0.1em;
 }
 
@@ -277,10 +270,9 @@
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: texto4;
-  background-color: #ffeaaf;
+  background-color: #fff5e3;
   margin: 10px 5px;
   padding: 15px;
-  border-radius: 20px;
   display: -ms-grid;
   display: grid;
   text-align: left;
@@ -293,7 +285,7 @@
 }
 
 .cuerpo__seccionDocencia_texto4 h2 {
-  font-size: 4em;
+  font-size: 3em;
   letter-spacing: 0.1em;
 }
 
@@ -312,10 +304,9 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: texto5;
-  background-color: #ffeaaf;
+  background-color: #fff5e3;
   margin: 10px 5px;
   padding: 15px;
-  border-radius: 20px;
   display: -ms-grid;
   display: grid;
   text-align: right;
@@ -328,7 +319,7 @@
 }
 
 .cuerpo__seccionDocencia_texto5 h2 {
-  font-size: 4em;
+  font-size: 3em;
   letter-spacing: 0.1em;
 }
 
@@ -347,10 +338,9 @@
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: texto6;
-  background-color: #ffeaaf;
+  background-color: #fff5e3;
   margin: 10px 5px;
   padding: 15px;
-  border-radius: 20px;
   display: -ms-grid;
   display: grid;
   text-align: left;
@@ -363,7 +353,7 @@
 }
 
 .cuerpo__seccionDocencia_texto6 h2 {
-  font-size: 4em;
+  font-size: 3em;
   letter-spacing: 0.1em;
 }
 
@@ -382,10 +372,9 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: texto7;
-  background-color: #ffeaaf;
+  background-color: #fff5e3;
   margin: 10px 5px;
   padding: 15px;
-  border-radius: 20px;
   display: -ms-grid;
   display: grid;
   text-align: right;
@@ -398,7 +387,7 @@
 }
 
 .cuerpo__seccionDocencia_texto7 h2 {
-  font-size: 4em;
+  font-size: 3em;
   letter-spacing: 0.1em;
 }
 
@@ -417,7 +406,6 @@
   -ms-grid-column: 4;
   grid-area: imagen1;
   margin: 10px 5px;
-  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -426,7 +414,6 @@
   -ms-grid-column: 2;
   grid-area: imagen2;
   margin: 10px 5px;
-  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -435,7 +422,6 @@
   -ms-grid-column: 4;
   grid-area: imagen3;
   margin: 10px 5px;
-  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -444,7 +430,6 @@
   -ms-grid-column: 2;
   grid-area: imagen4;
   margin: 10px 5px;
-  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -453,7 +438,6 @@
   -ms-grid-column: 4;
   grid-area: imagen5;
   margin: 10px 5px;
-  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -462,7 +446,6 @@
   -ms-grid-column: 2;
   grid-area: imagen6;
   margin: 10px 5px;
-  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -471,7 +454,6 @@
   -ms-grid-column: 4;
   grid-area: imagen7;
   margin: 10px 5px;
-  border-radius: 20px;
   overflow: hidden;
 }
 

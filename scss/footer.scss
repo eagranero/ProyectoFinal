@@ -7,16 +7,30 @@
 	align-items: stretch;
 	height: 200px;
 	margin-top: 15px;
+	background-image: url("../media/head2.jpg");
+	background-size: 100% ;
+	background-position: bottom;
+
+	p{
+		color: white;
+	}
+	h3{
+		color: white;
+		margin-bottom: 0px;
+		font-weight: 500;
+		font-size: 1.1em;
+	}
+
 	&__datosContacto{
-		background-color: rgb(70, 60, 50);
+		background-color: rgba(116, 104, 77, 0.479);
 		width:60%;
 		text-align: left;
 		padding-top: 30px;
 		padding-left: 10px;
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	&__datosDesarrollador{
-		background-color: rgb(70, 60, 50);
+		background-color: rgba(116, 104, 77, 0.479);
 		width: 40%;
 		text-align: right;
 		padding-top: 50px;
@@ -27,7 +41,7 @@
 
 /*MOBILE**********************************/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 575px) {
 	
 	.footer{
 		flex-direction: column;
@@ -35,11 +49,15 @@
 			height: 120px;
 			width: 100%;
 			text-align: center;
+			font-size: 2.5em;
+			padding-left:0px;
 		}
 		&__datosDesarrollador{
 			height: 120px;
 			width: 100%;
 			text-align: center;
+			font-size: 1.5em;
+			padding-right:0px;
 		}
 	}
 

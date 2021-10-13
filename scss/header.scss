@@ -20,6 +20,8 @@ header{
 				margin-top: 40px;
 				letter-spacing: 15px;
 				font-size:4em;
+				font-weight: 300;
+				text-shadow: black 0.05em 0.05em 0.2em;
 				span{
 					font-weight: 700;
 				}
@@ -29,6 +31,8 @@ header{
 				color: white;
 				font-size:1.25em;
 				letter-spacing: 2px;
+				font-weight: 300;
+				text-shadow: black 0.05em 0.05em 0.2em;
 			}
 		}
 	}
@@ -63,6 +67,7 @@ header{
 		.iconoMenu{
 			height: 90%;
 			padding-top: 5%;
+			filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 1));
 		}
 
 		&__lista{
@@ -74,11 +79,11 @@ header{
 				color: white;
 				font-size: 1.5em;
 				letter-spacing: 0.1em;
-				text-shadow: black 0.05em 0.05em 0.1em;
+				text-shadow: black 0em 0.1em 0.8em;
 			}
 			&--formatoTexto:hover{
 				text-decoration: none;
-				text-shadow: black 0.1em 0.1em 0.2em;
+				text-shadow: black 0em 0.1em 0.8em;
 				color: white;
 			}
 
@@ -87,7 +92,8 @@ header{
 }
 
 /*MOBILE**********************************/
-@media only screen and (max-width: 990px) {
+
+@media only screen and (max-width: 1024px) {
 	header{
 		.encabezado{
 			&__texto{
@@ -102,43 +108,38 @@ header{
 			}
 		}
 		.menu{
-			padding: auto;
-			height: auto;
-			
-			.item{
-				&_activo{
-					background:currentColor;
-					background-color: rgb(116, 104, 77);
-					width: auto;
-					text-align: auto;
-					height: auto;
-					padding-top: auto;
-					border-top-left-radius: 0px;
-					border-top-right-radius: 0px;
-				}
-				&_inactivo{
-					width: auto;
-					text-align: auto;
-					height: auto;
-					padding-top: auto;
+			div{
+				width: 100%;
+			}
+			.opcionesContacto{
+				div{
+					width: 10%;
 				}
 			}
-
 			&__lista{
+				justify-content: space-around;
+				align-items: center;
+				width: 100%;
+				
 				&--formatoTexto{
-					font-size: 2em;
-					letter-spacing: 0.2em;
+					color: white;
+					font-size: 1.5em;
+					letter-spacing: 0.1em;
+					text-shadow: black 0em 0.1em 0.8em;
+				}
+				&--formatoTexto:hover{
+					text-decoration: none;
+					text-shadow: black 0em 0.1em 0.8em;
+					color: white;
 				}
 			}
 		}
-
-
-
 	}
 }
 
 
-@media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 575px) {
 
 	header{
 		.encabezado{
@@ -154,37 +155,63 @@ header{
 			}
 		}
 		.menu{
-			padding: auto;
+		
+			background: linear-gradient(180deg, rgba(116, 104, 77, 0.0),  rgba(116, 104, 77, 0.5) 15%, rgba(116, 104, 77, 1) 60%);
+			padding: 0px;
 			height: auto;
-			
-			.item{
-				&_activo{
-					background:currentColor;
-					background-color: rgb(116, 104, 77);
-					width: auto;
-					text-align: auto;
-					height: auto;
-					padding-top: auto;
-					border-top-left-radius: 0px;
-					border-top-right-radius: 0px;
+	
+			div{
+				width: 100%;
+				margin-top: 0px !important;
+				.item{
+					&_texto{
+						width: 100%;
+						text-align: center;
+						height: 35px;
+						padding-top: 15px;
+						font-size: 2em;
+						height: 50px;
+					}
+					&_icono{
+						width: 10%;
+						text-align: center;
+						height: 50px;
+					}
 				}
-				&_inactivo{
-					width: auto;
-					text-align: auto;
-					height: auto;
-					padding-top: auto;
+				.opcionesContacto{
+					display: flex;
+					flex-direction: row;
+					width: 80%;
+					justify-content: center;
+					padding-top: 15px;
+					height: 50px;
+					div{
+						width: 30%;
+					}
 				}
-			}
-
-			&__lista{
-				&--formatoTexto{
-					font-size: 4em;
-					letter-spacing: 0.2em;
+				.iconoMenu{
+					filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
+				}
+		
+				&__lista{
+					justify-content: space-around;
+					align-items: center;
+					width: 100%;
+					
+					&--formatoTexto{
+						color: white;
+						font-size: 2em;
+						letter-spacing: 0.1em;
+						text-shadow: black 0em 0.1em 0.8em;
+					}
+					&--formatoTexto:hover{
+						text-decoration: none;
+						text-shadow: black 0em 0.1em 0.8em;
+						color: white;
+					}
+		
 				}
 			}
 		}
-
-
-
 	}
 }

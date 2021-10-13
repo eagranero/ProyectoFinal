@@ -4,69 +4,96 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Comentarios de profesores, colegas, alumnos y compañeros sobre Florencia Zini>
+    <meta name="description" content="Trayectoria profesional como nutricionista, docente e instructora de yoga de Florencia Zini">
     <meta name="author" content="Florencia Zini">
 
-    <title>Recomendaciones</title>
+	<meta name="keywords" content="Licenciada, Nutrición, Yoga, Florencia, Zini, Curriculum, Trayectoria">
+
+    <title>Licenciada Florencia Zini</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
+</head>
 
-  </head>
-
-  <body>
+<body>
   	<header>
-		<div class="encabezado">
-			<h1 class="encabezado__texto encabezado__texto--titulo">FLORENCIA<span>ZINI</span></h1>
-			<h2 class="encabezado__texto encabezado__texto--subtitulo">LICENCIADA EN NUTRICIÓN</h2>
+	  	<div class="encabezado">
+				<h1 class="encabezado__texto encabezado__texto--titulo">FLORENCIA<span>ZINI</span></h1>
+				<h2 class="encabezado__texto encabezado__texto--subtitulo">LICENCIADA EN NUTRICIÓN</h2>
 		</div>
-   	
-	    <nav class="menu navbar navbar-expand-lg navbar-light">
-		   		
+	   	
+	    <nav class="menu navbar navbar-expand-sm navbar-light">   		
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 		   	</button>
 		   	<div class="collapse navbar-collapse" id="navbarScroll">
-		    	<ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll menu__lista" style="max-height: 200px;">
-		      		<li class="nav-item item_inactivo"><a class="menu__lista--formatoTexto" href="index.html">INICIO </a></li>
-		       		<li class="nav-item item_inactivo"><a class="menu__lista--formatoTexto" href="quien_soy.html">QUIEN SOY</a></li>
-		       		<li class="nav-item item_activo"><a class="menu__lista--formatoTexto" href="recomendaciones.html">RECOMENDACIONES</a></li>
-		       		<li class="nav-item item_inactivo"><a class="menu__lista--formatoTexto" href="contacto.html">CONTACTO</a></li>
-		       	</ul>
+		    	<div class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll menu__lista" style="max-height: 200px;">
+		      		<div class="nav-item item_icono"><a href="index.html"><img class="iconoMenu" src="media/home.png" alt="home"></a></div>
+					<!--<div class="nav-item item_texto"><a class="menu__lista--formatoTexto" href="index.html">INICIO </a></div> -->
+		       		<div class="nav-item item_texto"><a class="menu__lista--formatoTexto" href="recomendaciones.html">RECOMENDACIONES</a></div>
+		       		<div class="nav-item item_icono opcionesContacto">
+						<div>
+							<a href="https://www.facebook.com" target="_blank"><img class="iconoMenu" src="media/contacto/redes1.png" alt="imagen 1"></a>
+						</div>
+						<div>
+							<a href="https://www.instagram.com" target="_blank"><img class="iconoMenu" src="media/contacto/redes2.png" alt="imagen 1"></a>
+						</div>
+						<div>
+							<a href="https://www.twitter.com" target="_blank"><img class="iconoMenu" src="media/contacto/redes3.png" alt="imagen 1"></a>
+						</div>
+						<div>
+							<a href="contacto.html"><img class="iconoMenu" src="media/contacto/redes4.png" alt="imagen 1"></a>
+						</div>
+					</div>
+				</div>
 			</div>
-	  	</nav>   	
+	  	</nav>	   	
    	</header>
 	
 	<div class="cuerpo"><!--Recomendaciones de alumnos, pacientes, profesores, colegas, etc-->
-		<div class="cuerpo__secciones">
-			<h1 class="cuerpo__secciones--formatoTituloSeccion">Recomendaciones:</h1>
-			<!--Las imagenes son una foto de la persona-->
-			<div>
-				<img src="media/persona.jpg" alt="Juan Perez">
-				<p>Texto de recomendacion 2</p>
-			</div>
-			<div>
-				<img src="media/persona.jpg" alt="Maria Gonzalez">
-				<p>Texto de recomendacion 2</p>
-			</div>
-			<div>
-				<img src="media/persona.jpg" alt="Pedro Gomez">
-				<p>Texto de recomendacion 2</p>
-			</div>
-			<div>
-				<img src="media/persona.jpg" alt="Pablo Garcia">
-				<p>Texto de recomendacion 2</p>
+		<div class="cuerpo__seccion">
+			<div class="cuerpo__seccionRecomendaciones">
+				<div class="tituloRecomendaciones">
+					<h1 class="cuerpo__seccion--formatoTituloSeccion">RECOMENDACIONES</h1>
+				</div>
+				<!--Las imagenes son una foto de la persona-->
+				<div class="cuerpo__seccionRecomendaciones_imagen1">
+					<img src="media/persona.jpg" alt="Juan Perez">
+				</div>
+				<div class="cuerpo__seccionRecomendaciones_texto1">
+					<p>Texto de recomendacion 1</p>
+				</div>
+				<div class="cuerpo__seccionRecomendaciones_imagen2">
+					<img src="media/persona.jpg" alt="Maria Gonzalez">
+				</div>
+				<div class="cuerpo__seccionRecomendaciones_texto2">
+					<p>Texto de recomendacion 2</p>
+				</div>
+				<div class="cuerpo__seccionRecomendaciones_imagen3">
+					<img src="media/persona.jpg" alt="Pedro Gomez">
+				</div>
+				<div class="cuerpo__seccionRecomendaciones_texto3">
+					<p>Texto de recomendacion 3</p>
+				</div>
+				<div class="cuerpo__seccionRecomendaciones_imagen4">
+					<img src="media/persona.jpg" alt="Pablo Garcia">
+				</div>
+				<div class="cuerpo__seccionRecomendaciones_texto4">
+					<p>Texto de recomendacion 4</p>
+				</div>
 			</div>
 		</div>		
 	</div>
 
 	<footer class="footer">
 		<div class="footer__datosContacto">
+			<h3>CONTACTO</h3>
 			<p>Lic Florencia Zini</p>
 			<p>Matricula: 12321</p>
 			<p>Email: lic.florenciazini@gmail.com</p>

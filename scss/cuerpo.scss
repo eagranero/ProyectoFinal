@@ -14,7 +14,6 @@
 		div{
 			width: 100%;
 			overflow: hidden;
-			height: 70vh;
 			.indicadoresCentrados{ 
 				margin: 0%;
 				background-color: rgba(0, 0, 0, 0.2);
@@ -30,11 +29,7 @@
 				border-radius: 15px;
 			}
 			.imagenPersonal {
-				/*display: flex;
-				align-items: flex-start;*/
-				.img{
 					width: 100%;
-				}
 			}
 		}
 	}
@@ -44,20 +39,25 @@
 		justify-content: space-between;
 		background-color: rgb(255, 245, 227);
 		width: 100%;
+		padding-inline:2%;
 		a{
 			text-decoration: none;
-			text-align: center;
-			color: black;
-			font-size:1.5em;
-			letter-spacing: 0.1em;
 			margin: 2px;
+			text-align: center;
+			p{
+				color: black;
+				font-size:1.5em;
+				letter-spacing: 0.1em;
+			}
+
 			img{
 				width: 100%;
+				filter: drop-shadow(0 4px 4px rgb(145, 145, 145));
 			}
 		}
 		div{
 			transition: transform 0.25s;
-			margin: 5%;
+			margin-block: 5%;
 		}
 		div:hover{
 			transform:scale(1.1,1.1); 
@@ -80,13 +80,79 @@
 	&__seccion{
 		padding: 1%;
 		&--formatoTituloSeccion{
-			color: red;
-			font-size:5em;
+			padding-top: 25px;
+			font-size: 5em;
 			letter-spacing: 0.1em;
+			font-weight: 500;
+			text-shadow: grey 0.1em 0.1em 0.2em;
+
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			padding-inline: 0px;
+
 		}
 		&--formatoTextoContenido{
 			color: rgb(100, 100, 100);
 			font-size:1.5em;
+		}
+
+		&Recomendaciones{
+			display: grid;
+			grid-template-columns: 1fr 1fr 4fr 1fr;
+			grid-template-rows: 100px 220px 220px 220px 220px;
+			grid-template-areas:
+			"margenIzq0 tituloRecomendaciones tituloRecomendaciones margenDer0" 
+			"margenIzq1 imagen1 texto1 margenDer1"
+			"margenIzq2 imagen2 texto2 margenDer2"
+			"margenIzq3 imagen3 texto3 margenDer3"
+			"margenIzq4 imagen4 texto4 margenDer4";
+
+			.tituloRecomendaciones{
+				grid-area: tituloRecomendaciones;
+			}
+
+			@for $i from 1 through 4 {
+				&_texto#{$i} { 
+					grid-area: texto#{$i};
+					background-color: rgb(255, 245, 227);
+					margin: 10px 5px;
+					padding: 15px;
+					display: grid; 
+
+					div{
+						align-self: center;
+					}
+
+					p{
+						font-size: 1em;
+						letter-spacing: 0.1em;
+					}
+
+				}
+			}
+
+			@for $i from 1 through 4 {
+				&_imagen#{$i} { 
+					grid-area: imagen#{$i};
+					margin: 10px 5px;
+					overflow: hidden;
+					img{
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+
+
+
+		}
+		
+		&Contacto{
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			padding-inline: 0px;
 		}
 
 		&Docencia{
@@ -105,13 +171,6 @@
 			
 			.tituloDocencia{
 				grid-area: tituloDocencia;
-				h1{
-					padding-top: 25px;
-					font-size: 6em;
-					letter-spacing: 0.1em;
-					font-weight: 700;
-					text-shadow: grey 0.1em 0.1em 0.2em;
-				}
 			}
 
 			@for $i from 1 through 7 {
@@ -135,10 +194,12 @@
 					h2{
 						font-size: 3em;
 						letter-spacing: 0.1em;
+						margin-bottom: 0px;
 					}
 					h3{
 						font-size: 2em;
 						letter-spacing: 0.1em;
+						font-weight: 400;
 					}
 					p{
 						font-size: 1em;
@@ -153,6 +214,10 @@
 					grid-area: imagen#{$i};
 					margin: 10px 5px;
 					overflow: hidden;
+					img{
+						width: 100%;
+						height: auto;
+					}
 				}
 			}
 		}
@@ -185,20 +250,211 @@
 
 /*MOBILE**********************************/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1024px) {
+	.cuerpo{
+
+		&__seccion{
+	
+			&Docencia{
+				display: grid;
+				grid-template-columns: 0fr 2fr 2fr 2fr 0fr;
+				grid-template-rows: 100px 220px 220px 220px 220px 220px 220px 220px;
+				grid-template-areas:
+				"margenIzq0 tituloDocencia tituloDocencia tituloDocencia margenDer0" 
+				"margenIzq1 texto1 texto1 imagen1 margenDer1"
+				"margenIzq2 imagen2 texto2 texto2 margenDer2"
+				"margenIzq3 texto3 texto3 imagen3 margenDer3"
+				"margenIzq4 imagen4 texto4 texto4 margenDer4"
+				"margenIzq5 texto5 texto5 imagen5 margenDer5"
+				"margenIzq6 imagen6 texto6 texto6 margenDer6"
+				"margenIzq7 texto7 texto7 imagen7 margenDer7";
+				
+				.tituloDocencia{
+					grid-area: tituloDocencia;
+				}
+	
+				@for $i from 1 through 7 {
+					&_texto#{$i} { 
+						grid-area: texto#{$i};
+						background-color: rgb(255, 245, 227);
+						margin: 10px 5px;
+						padding: 15px;
+						display: grid; 
+						@if $i % 2 == 0
+						{
+							text-align: left;
+						} @else{
+							text-align: right;
+						}
+	
+						div{
+							align-self: center;
+						}
+	
+						h2{
+							font-size: 3em;
+							letter-spacing: 0.1em;
+							margin-bottom: 0px;
+						}
+						h3{
+							font-size: 2em;
+							letter-spacing: 0.1em;
+							font-weight: 400;
+						}
+						p{
+							font-size: 1em;
+							letter-spacing: 0.1em;
+						}
+	
+					}
+				}
+	
+				@for $i from 1 through 7 {
+					&_imagen#{$i} { 
+						grid-area: imagen#{$i};
+						margin: 10px 5px;
+						overflow: hidden;
+						img{
+							width: auto;
+							height: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 575px) {
 
 	.cuerpo{
 		&__contenedorPersonal{
 			flex-direction: column;
+			overflow: hidden;
+			div{
+				width: 120%;
+				margin-left: -10%;
+			}
+			.indicadorAnterior{
+				margin-left: 10%;
+			}
+			
+			.indicadorSiguiente{
+				margin-right: 10%;
+			}
 		}
 		&__conenedorImagenesCategorias{
 			flex-direction: column;
+			padding-inline:10%;
 			a{
-				font-size:3.5em;
+				font-size:2.5em;
 				letter-spacing: 0.1em;
-				margin: 2px;
 			}
 		}
+
+
+		&__seccion{
+			padding: 1%;
+			&--formatoTituloSeccion{
+				padding-top: 25px;
+				font-size: 5em;
+				letter-spacing: 0.1em;
+				font-weight: 500;
+				text-shadow: grey 0.1em 0.1em 0.2em;
+	
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				padding-inline: 0px;
+	
+			}
+			&--formatoTextoContenido{
+				color: rgb(100, 100, 100);
+				font-size:1.5em;
+			}
+			
+			&Contacto{
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				padding-inline: 0px;
+			}
+	
+			&Docencia{
+				display: grid;
+				grid-template-columns: 0fr 2fr 2fr 2fr 0fr;
+				grid-template-rows: 50px 150px 150px 150px 150px 150px 150px 150px;
+				grid-template-areas:
+				"margenIzq0 tituloDocencia tituloDocencia tituloDocencia margenDer0" 
+				"margenIzq1 texto1 texto1 imagen1 margenDer1"
+				"margenIzq2 imagen2 texto2 texto2 margenDer2"
+				"margenIzq3 texto3 texto3 imagen3 margenDer3"
+				"margenIzq4 imagen4 texto4 texto4 margenDer4"
+				"margenIzq5 texto5 texto5 imagen5 margenDer5"
+				"margenIzq6 imagen6 texto6 texto6 margenDer6"
+				"margenIzq7 texto7 texto7 imagen7 margenDer7";
+				
+				.tituloDocencia{
+					grid-area: tituloDocencia;
+				}
+	
+				@for $i from 1 through 7 {
+					&_texto#{$i} { 
+						grid-area: texto#{$i};
+						background-color: rgb(255, 245, 227);
+						margin: 10px 5px;
+						padding: 0px 10px 0px 10px;
+						display: grid; 
+						@if $i % 2 == 0
+						{
+							text-align: left;
+						} @else{
+							text-align: right;
+						}
+	
+						div{
+							align-self: center;
+						}
+	
+						h2{
+							font-size:4em;
+							letter-spacing: 0.1em;
+							margin-bottom: 0px;
+						}
+						h3{
+							font-size: 3em;
+							letter-spacing: 0.1em;
+							font-weight: 400;
+						}
+						p{
+							font-size: 1.5em;
+							letter-spacing: 0.1em;
+						}
+	
+					}
+				}
+	
+				@for $i from 1 through 7 {
+					&_imagen#{$i} { 
+						grid-area: imagen#{$i};
+						margin: 10px 5px;
+						overflow: hidden;
+						img{
+							height: 100%;
+							width: auto;
+						}
+						
+					}
+				}
+			}
+		}
+
+		
+
+
+
+
 
 		form{
 			.centrado{
@@ -211,3 +467,4 @@
 
 	}
 }
+

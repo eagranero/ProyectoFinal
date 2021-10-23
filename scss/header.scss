@@ -40,10 +40,30 @@ header{
 		
 		background-color: rgba(116, 104, 77, 0.479);
 		padding: 0px;
+<<<<<<< Updated upstream
 		height: 35px;
 
 		.item{
 			&_texto{
+=======
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		
+		.item{
+
+			&_home{
+				display: block;
+				width: 5%;
+				text-align: center;
+				height: 80%;
+			}
+			&_recomedaciones{
+>>>>>>> Stashed changes
 				width: 15%;
 				text-align: center;
 				height: 35px;
@@ -55,6 +75,7 @@ header{
 				height: 30px;
 			}
 		}
+<<<<<<< Updated upstream
 		.opcionesContacto{
 			display: flex;
 			flex-direction: row;
@@ -80,13 +101,113 @@ header{
 				font-size: 1.5em;
 				letter-spacing: 0.1em;
 				text-shadow: black 0em 0.1em 0.8em;
+=======
+
+		.iconoMenu {
+			height: 25px;
+			padding-top: 2%;
+			filter: drop-shadow(2px 1px 2px black);
+		}
+
+	
+
+
+			.efectoMenu:hover{
+				a{
+					text-decoration: none;
+					text-shadow:black 0em 0.1em 0.8em;
+					color: white;
+				}
+				img{
+					filter: drop-shadow(2px 1px 2px black);
+				}
+			}
+		
+	}
+}
+
+/*MOBILE**********************************/
+
+
+@media only screen and (max-width: 575px) {
+
+	header{
+		.encabezado{
+			height: 110px;
+			&__texto{
+				&--titulo{
+					letter-spacing: 5px;
+					font-size:5em;
+					margin-top: 25px;
+				}
+				&--subtitulo{
+					font-size:2.5em;
+					letter-spacing: 1px;
+				}
+			}
+		}
+		.menu{
+		
+			justify-content: space-around;
+			align-items: center;
+			width: 100%;
+			flex-wrap: wrap;
+			height: 150px;
+
+			padding: 0px;
+			height: auto;
+			width: 100%;
+			background: linear-gradient(180deg, rgba(116, 104, 77, 0), rgba(116, 104, 77, 0.5) 15%, #74684d 60%);
+
+			.item{
+
+				&_home{
+					border-right-style: solid;
+					border-right-color: white;
+					width: 29%;
+					height: 30px;
+				}
+
+				&_recomedaciones{
+
+					order: 3;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 40px;
+					width: 100%;
+
+					text-align: center;
+					font-size: 1.5em;
+
+					color: white;
+					letter-spacing: 0.1em;
+					text-shadow: black 0em 0.1em 0.8em;
+				}
+				&_contacto{
+					order: 2;
+					display: flex;
+					flex-direction: row;
+					width: 70%;
+					justify-content: center;
+					padding-top: 0px;
+					height: 30px;
+					div{
+						width: 20%;
+					}
+				}
+>>>>>>> Stashed changes
 			}
 			&--formatoTexto:hover{
 				text-decoration: none;
 				text-shadow: black 0em 0.1em 0.8em;
 				color: white;
 			}
+<<<<<<< Updated upstream
 
+=======
+			
+>>>>>>> Stashed changes
 		}
 	}
 }

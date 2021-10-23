@@ -11,23 +11,10 @@
 		flex-direction: row;
 		justify-content: space-between;
 		margin: 0%;
+		height: 75vh;
 		div{
 			width: 100%;
 			overflow: hidden;
-			.indicadoresCentrados{ 
-				margin: 0%;
-				background-color: rgba(0, 0, 0, 0.2);
-				li{
-					background-color: white;
-				}
-			}
-			.indicadoresAtrasAdelante{
-				width: 30px;
-				height: 30px;
-				background-color: rgba(0, 0, 0, 0.2);
-				background-size: 75%;
-				border-radius: 15px;
-			}
 			.imagenPersonal {
 					width: 100%;
 			}
@@ -39,10 +26,11 @@
 		justify-content: space-between;
 		background-color: rgb(255, 245, 227);
 		width: 100%;
-		padding-inline:2%;
+		div{
+			margin: 2%;
+		}
 		a{
 			text-decoration: none;
-			margin: 2px;
 			text-align: center;
 			p{
 				color: black;
@@ -329,24 +317,22 @@
 @media only screen and (max-width: 575px) {
 
 	.cuerpo{
+		width: 100%;
 		&__contenedorPersonal{
 			flex-direction: column;
 			overflow: hidden;
+			height: auto;
 			div{
 				width: 120%;
 				margin-left: -10%;
 			}
-			.indicadorAnterior{
-				margin-left: 10%;
-			}
-			
-			.indicadorSiguiente{
-				margin-right: 10%;
-			}
 		}
 		&__conenedorImagenesCategorias{
 			flex-direction: column;
-			padding-inline:10%;
+			padding-inline:0%;
+			div{
+				margin:5%
+			}
 			a{
 				font-size:2.5em;
 				letter-spacing: 0.1em;

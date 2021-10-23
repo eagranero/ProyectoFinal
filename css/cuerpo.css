@@ -29,28 +29,12 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0%;
+  height: 75vh;
 }
 
 .cuerpo__contenedorPersonal div {
   width: 100%;
   overflow: hidden;
-}
-
-.cuerpo__contenedorPersonal div .indicadoresCentrados {
-  margin: 0%;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.cuerpo__contenedorPersonal div .indicadoresCentrados li {
-  background-color: white;
-}
-
-.cuerpo__contenedorPersonal div .indicadoresAtrasAdelante {
-  width: 30px;
-  height: 30px;
-  background-color: rgba(0, 0, 0, 0.2);
-  background-size: 75%;
-  border-radius: 15px;
 }
 
 .cuerpo__contenedorPersonal div .imagenPersonal {
@@ -70,12 +54,14 @@
           justify-content: space-between;
   background-color: #fff5e3;
   width: 100%;
-  padding-inline: 2%;
+}
+
+.cuerpo__conenedorImagenesCategorias div {
+  margin: 2%;
 }
 
 .cuerpo__conenedorImagenesCategorias a {
   text-decoration: none;
-  margin: 2px;
   text-align: center;
 }
 
@@ -1003,29 +989,30 @@
 }
 
 @media only screen and (max-width: 575px) {
+  .cuerpo {
+    width: 100%;
+  }
   .cuerpo__contenedorPersonal {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     overflow: hidden;
+    height: auto;
   }
   .cuerpo__contenedorPersonal div {
     width: 120%;
     margin-left: -10%;
-  }
-  .cuerpo__contenedorPersonal .indicadorAnterior {
-    margin-left: 10%;
-  }
-  .cuerpo__contenedorPersonal .indicadorSiguiente {
-    margin-right: 10%;
   }
   .cuerpo__conenedorImagenesCategorias {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-inline: 10%;
+    padding-inline: 0%;
+  }
+  .cuerpo__conenedorImagenesCategorias div {
+    margin: 5%;
   }
   .cuerpo__conenedorImagenesCategorias a {
     font-size: 2.5em;

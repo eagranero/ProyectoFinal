@@ -49,10 +49,37 @@ header .encabezado__texto--subtitulo {
 header .menu {
   background-color: rgba(116, 104, 77, 0.479);
   padding: 0px;
+<<<<<<< Updated upstream
   height: 35px;
 }
 
 header .menu .item_texto {
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+header .menu .item_home {
+  display: block;
+  width: 5%;
+  text-align: center;
+  height: 80%;
+}
+
+header .menu .item_recomedaciones {
+>>>>>>> Stashed changes
   width: 15%;
   text-align: center;
   height: 35px;
@@ -84,6 +111,7 @@ header .menu .opcionesContacto div {
 }
 
 header .menu .iconoMenu {
+<<<<<<< Updated upstream
   height: 90%;
   padding-top: 5%;
   -webkit-filter: drop-shadow(0 2px 8px black);
@@ -107,11 +135,21 @@ header .menu__lista--formatoTexto {
 }
 
 header .menu__lista--formatoTexto:hover {
+=======
+  height: 25px;
+  padding-top: 2%;
+  -webkit-filter: drop-shadow(2px 1px 2px black);
+          filter: drop-shadow(2px 1px 2px black);
+}
+
+header .menu .efectoMenu:hover a {
+>>>>>>> Stashed changes
   text-decoration: none;
   text-shadow: black 0em 0.1em 0.8em;
   color: white;
 }
 
+<<<<<<< Updated upstream
 /*MOBILE**********************************/
 @media only screen and (max-width: 1024px) {
   header .encabezado__texto--titulo {
@@ -147,6 +185,11 @@ header .menu__lista--formatoTexto:hover {
     text-shadow: black 0em 0.1em 0.8em;
     color: white;
   }
+=======
+header .menu .efectoMenu:hover img {
+  -webkit-filter: drop-shadow(2px 1px 2px black);
+          filter: drop-shadow(2px 1px 2px black);
+>>>>>>> Stashed changes
 }
 
 @media only screen and (max-width: 575px) {
@@ -159,8 +202,20 @@ header .menu__lista--formatoTexto:hover {
     letter-spacing: 1px;
   }
   header .menu {
+<<<<<<< Updated upstream
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(116, 104, 77, 0)), color-stop(15%, rgba(116, 104, 77, 0.5)), color-stop(60%, #74684d));
     background: linear-gradient(180deg, rgba(116, 104, 77, 0), rgba(116, 104, 77, 0.5) 15%, #74684d 60%);
+=======
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 150px;
+>>>>>>> Stashed changes
     padding: 0px;
     height: auto;
   }
@@ -168,6 +223,7 @@ header .menu__lista--formatoTexto:hover {
     width: 100%;
     margin-top: 0px !important;
   }
+<<<<<<< Updated upstream
   header .menu div .item_texto {
     width: 100%;
     text-align: center;
@@ -178,10 +234,40 @@ header .menu__lista--formatoTexto:hover {
   }
   header .menu div .item_icono {
     width: 10%;
+=======
+  header .menu .item_home {
+    border-right-style: solid;
+    border-right-color: white;
+    width: 29%;
+    height: 30px;
+  }
+  header .menu .item_recomedaciones {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 40px;
+    width: 100%;
+>>>>>>> Stashed changes
     text-align: center;
     height: 50px;
   }
+<<<<<<< Updated upstream
   header .menu div .opcionesContacto {
+=======
+  header .menu .item_contacto {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+>>>>>>> Stashed changes
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -189,20 +275,29 @@ header .menu__lista--formatoTexto:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 80%;
+    width: 70%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+<<<<<<< Updated upstream
     padding-top: 15px;
     height: 50px;
   }
   header .menu div .opcionesContacto div {
     width: 30%;
+=======
+    padding-top: 0px;
+    height: 30px;
+  }
+  header .menu .item_contacto div {
+    width: 20%;
+>>>>>>> Stashed changes
   }
   header .menu div .iconoMenu {
     -webkit-filter: drop-shadow(0 1px 1px black);
             filter: drop-shadow(0 1px 1px black);
   }
+<<<<<<< Updated upstream
   header .menu div__lista {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -222,5 +317,7 @@ header .menu__lista--formatoTexto:hover {
     text-shadow: black 0em 0.1em 0.8em;
     color: white;
   }
+=======
+>>>>>>> Stashed changes
 }
 /*# sourceMappingURL=header.css.map */

@@ -4,6 +4,7 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: stretch;
+	margin-block: 3px;
 	
     &__contenedorPersonal{
 		background: url("../media/personal.webp");
@@ -87,6 +88,9 @@
 		}
 
 		&Recomendaciones{
+			background-image: url(../media/fondosSecciones/recomendaciones.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
 			display: grid;
 			grid-template-columns: 1fr 1fr 4fr 1fr;
 			grid-template-rows: 100px 220px 220px 220px 220px;
@@ -99,6 +103,7 @@
 
 			.tituloRecomendaciones{
 				grid-area: tituloRecomendaciones;
+				color: white;
 			}
 
 			@for $i from 1 through 4 {
@@ -172,13 +177,13 @@
 					.centrado{
 						text-align: center;
 						padding-inline: 0px;
-						width: 50%;
+						width: 60%;
 						margin-block: 5px;
 						input, select, textarea{
 							display: block;
 							width: 100%;
 							height: calc(1.5em + .75rem + 2px);
-							padding: 0% 2%;
+							padding: 0px;
 							font-size: 1rem;
 							font-weight: 400;
 							line-height: 1.5;
@@ -236,12 +241,12 @@
 			}
 			.textoConsultoria{
 				grid-area: textoConsultoria;
-				padding-left: 5%;
+				padding: 0px 20px 0px 25px;
 				background-color: rgba(0, 0, 0, 0.7);
 				letter-spacing: 1px;
 
 				ul{
-					margin-block: 5%;
+					margin-block: 25px;
 				}
 
 				h2{
@@ -300,30 +305,34 @@
 			}
 			.textoDocencia{
 				grid-area: textoDocencia;
-				padding-left: 5%;
+				padding: 0px 20px 0px 25px;
 				background-color: rgba(0, 0, 0, 0.7);
 				letter-spacing: 1px;
 				ul{
-					margin-block: 2.5%;
-					li{
-						margin-block: 2.5%;
-					}
+					margin-block: 25px;
 				}
-				h3{
-					font-size: 2em;
+
+				h2{
+					font-size: 2.5em;
 					margin: 0px;
 					font-weight: 500;
 				}
-				h4{
-					font-size: 1.2em;
-					margin-bottom: 5px;
+
+				h3{
+					font-size: 2em;
+					margin: 0px;
 					font-weight: 300;
+					margin-top: 1.5%;
+				}
+				h4{
+					font-size: 1.5em;
+					margin-top: 5px;
+					font-weight: 500;
 				}
 				h5{
 					font-size: 1.2em;
 					margin: 0px;
-					margin-top: 10px;
-					font-weight: 500;
+					font-weight: 300;
 				}
 				h6{
 					font-size: 1.2em;
@@ -353,82 +362,6 @@
 
 /*MOBILE**********************************/
 
-@media only screen and (max-width: 1024px) {
-	.cuerpo{
-
-		&__seccion{
-	
-			&Docencia{
-				display: grid;
-				grid-template-columns: 0fr 2fr 2fr 2fr 0fr;
-				grid-template-rows: 100px 220px 220px 220px 220px 220px 220px 220px;
-				grid-template-areas:
-				"margenIzq0 tituloDocencia tituloDocencia tituloDocencia margenDer0" 
-				"margenIzq1 texto1 texto1 imagen1 margenDer1"
-				"margenIzq2 imagen2 texto2 texto2 margenDer2"
-				"margenIzq3 texto3 texto3 imagen3 margenDer3"
-				"margenIzq4 imagen4 texto4 texto4 margenDer4"
-				"margenIzq5 texto5 texto5 imagen5 margenDer5"
-				"margenIzq6 imagen6 texto6 texto6 margenDer6"
-				"margenIzq7 texto7 texto7 imagen7 margenDer7";
-				
-				.tituloDocencia{
-					grid-area: tituloDocencia;
-				}
-	
-				@for $i from 1 through 7 {
-					&_texto#{$i} { 
-						grid-area: texto#{$i};
-						background-color: rgb(255, 245, 227);
-						margin: 10px 5px;
-						padding: 15px;
-						display: grid; 
-						@if $i % 2 == 0
-						{
-							text-align: left;
-						} @else{
-							text-align: right;
-						}
-	
-						div{
-							align-self: center;
-						}
-	
-						h2{
-							font-size: 3em;
-							letter-spacing: 0.1em;
-							margin-bottom: 0px;
-						}
-						h3{
-							font-size: 2em;
-							letter-spacing: 0.1em;
-							font-weight: 400;
-						}
-						p{
-							font-size: 1em;
-							letter-spacing: 0.1em;
-						}
-	
-					}
-				}
-	
-				@for $i from 1 through 7 {
-					&_imagen#{$i} { 
-						grid-area: imagen#{$i};
-						margin: 10px 5px;
-						overflow: hidden;
-						img{
-							width: auto;
-							height: 100%;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-
 @media only screen and (max-width: 575px) {
 
 	.cuerpo{
@@ -452,10 +385,10 @@
 						padding-block: 5vh;
 						color: white;
 						h2{
-							font-size: 5em;
+							font-size: 6em;
 						}
 						p{
-							font-size: 3em;
+							font-size: 3.5em;
 						}
 						h3{
 							font-size: 3em;
@@ -476,22 +409,22 @@
 				font-size:2.5em;
 				letter-spacing: 0.1em;
 			}
+			div:hover{
+				transform:none; 
+		   }
 		}
 
 
 		&__seccion{
-			padding: 1%;
+			padding: 0%;
 			&--formatoTituloSeccion{
-				padding-top: 25px;
+				padding: 0px;
 				font-size: 5em;
 				letter-spacing: 0.1em;
 				font-weight: 500;
-				text-shadow: grey 0.1em 0.1em 0.2em;
 	
-				margin-left: auto;
-				margin-right: auto;
 				text-align: center;
-				padding-inline: 0px;
+				margin-inline: 50px;
 	
 			}
 			&--formatoTextoContenido{
@@ -500,96 +433,123 @@
 			}
 			
 			&Contacto{
-				margin-left: auto;
-				margin-right: auto;
-				text-align: center;
-				padding-inline: 0px;
+				grid-template-columns: 0fr 5fr;
+				grid-template-rows: 100px 100%;
+				.tituloContacto{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+				.textoContacto{
+					padding-inline:0px ;
+					form{
+						align-items: center;
+						.centrado{
+							width: 90%;
+						}
+					}
+				}
+			}
+
+			&Consultoria{
+				grid-template-columns: 0fr 5fr;
+				grid-template-rows: 100px 100%;
+
+				.imagenConsultoria{
+					grid-area: imagenConsultoria;			
+				}
+
+				.tituloConsultoria{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+
+				.textoConsultoria{
+					padding: 10px 20px 10px 20px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+
+					ul{
+						margin-block: 15px;
+					}
+
+					h2{
+						font-size: 4.5em;
+					}
+	
+					h3{
+						font-size: 3em;
+						margin-top: 5px;
+					}
+					h4{
+						font-size: 2.5em;
+						letter-spacing: 1px;
+						font-weight: 400;
+					}
+					h5{
+						font-size: 2.2em;
+						margin: 0px;
+						font-weight: 300;
+					}
+					h6{
+						font-size: 2.2em;
+						margin: 0px;
+						font-weight: 300;
+						font-style: italic;
+					}
+				}
 			}
 	
 			&Docencia{
-				display: grid;
-				grid-template-columns: 0fr 2fr 2fr 2fr 0fr;
-				grid-template-rows: 50px 150px 150px 150px 150px 150px 150px 150px;
-				grid-template-areas:
-				"margenIzq0 tituloDocencia tituloDocencia tituloDocencia margenDer0" 
-				"margenIzq1 texto1 texto1 imagen1 margenDer1"
-				"margenIzq2 imagen2 texto2 texto2 margenDer2"
-				"margenIzq3 texto3 texto3 imagen3 margenDer3"
-				"margenIzq4 imagen4 texto4 texto4 margenDer4"
-				"margenIzq5 texto5 texto5 imagen5 margenDer5"
-				"margenIzq6 imagen6 texto6 texto6 margenDer6"
-				"margenIzq7 texto7 texto7 imagen7 margenDer7";
-				
+				grid-template-columns: 0fr 5fr;
+				grid-template-rows: 100px 100%;
+
 				.tituloDocencia{
-					grid-area: tituloDocencia;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
 				}
 	
-				@for $i from 1 through 7 {
-					&_texto#{$i} { 
-						grid-area: texto#{$i};
-						background-color: rgb(255, 245, 227);
-						margin: 10px 5px;
-						padding: 0px 10px 0px 10px;
-						display: grid; 
-						@if $i % 2 == 0
-						{
-							text-align: left;
-						} @else{
-							text-align: right;
-						}
+				.textoDocencia{
+					padding: 10px 20px 10px 20px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+
+					ul{
+						margin-block: 15px;
+					}
+
+					h2{
+						font-size: 4.5em;
+					}
 	
-						div{
-							align-self: center;
-						}
-	
-						h2{
-							font-size:4em;
-							letter-spacing: 0.1em;
-							margin-bottom: 0px;
-						}
-						h3{
-							font-size: 3em;
-							letter-spacing: 0.1em;
-							font-weight: 400;
-						}
-						p{
-							font-size: 1.5em;
-							letter-spacing: 0.1em;
-						}
-	
+					h3{
+						font-size: 3em;
+						margin-top: 5px;
+					}
+					h4{
+						font-size: 2.5em;
+						letter-spacing: 1px;
+						font-weight: 400;
+					}
+					h5{
+						font-size: 2.2em;
+						margin: 0px;
+						font-weight: 300;
+					}
+					h6{
+						font-size: 2.2em;
+						margin: 0px;
+						font-weight: 300;
+						font-style: italic;
 					}
 				}
-	
-				@for $i from 1 through 7 {
-					&_imagen#{$i} { 
-						grid-area: imagen#{$i};
-						margin: 10px 5px;
-						overflow: hidden;
-						img{
-							height: 100%;
-							width: auto;
-						}
-						
-					}
-				}
+				
 			}
 		}
-
-		
-
-
-
-
-
-		form{
-			.centrado{
-				margin-left: 2%;
-				margin-right: 2%;
-				text-align: center;
-				padding-inline: 0px;
-			}
-		}
-
 	}
 }
 

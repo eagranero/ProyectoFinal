@@ -40,7 +40,7 @@ header .encabezado__texto--titulo span {
 header .encabezado__texto--subtitulo {
   margin-top: 5px;
   color: white;
-  font-size: 1.25em;
+  font-size: 1.5em;
   letter-spacing: 2px;
   font-weight: 300;
   text-shadow: black 0.05em 0.05em 0.2em;
@@ -70,7 +70,7 @@ header .menu .item_recomedaciones a {
   color: white;
   font-size: 1.5em;
   letter-spacing: 0.1em;
-  text-shadow: black 0em 0.1em 0.8em;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 header .menu .item_contacto {
@@ -98,29 +98,18 @@ header .menu .item_contacto div {
 
 header .menu .iconoMenu {
   height: 25px;
-  -webkit-filter: drop-shadow(2px 1px 2px black);
-          filter: drop-shadow(2px 1px 2px black);
-}
-
-header .menu .efectoMenu:hover a {
-  text-decoration: none;
-  text-shadow: black 0em 0.1em 0.8em;
-  color: white;
-}
-
-header .menu .efectoMenu:hover img {
-  -webkit-filter: drop-shadow(2px 1px 2px black);
-          filter: drop-shadow(2px 1px 2px black);
+  -webkit-filter: drop-shadow(2px 2px 3px black);
+          filter: drop-shadow(2px 2px 3px black);
 }
 
 /*MOBILE**********************************/
 @media only screen and (max-width: 575px) {
   header .encabezado {
-    height: 110px;
+    height: 120px;
   }
   header .encabezado__texto--titulo {
     letter-spacing: 5px;
-    font-size: 5em;
+    font-size: 7em;
     margin-top: 25px;
   }
   header .encabezado__texto--subtitulo {
@@ -140,8 +129,7 @@ header .menu .efectoMenu:hover img {
     padding: 0px;
     height: auto;
     width: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(116, 104, 77, 0)), color-stop(15%, rgba(116, 104, 77, 0.5)), color-stop(60%, #74684d));
-    background: linear-gradient(180deg, rgba(116, 104, 77, 0), rgba(116, 104, 77, 0.5) 15%, #74684d 60%);
+    background-color: rgba(116, 104, 77, 0.7);
   }
   header .menu .item_home {
     border-right-style: solid;
@@ -149,6 +137,7 @@ header .menu .efectoMenu:hover img {
     width: 29%;
     height: 30px;
     text-align: center;
+    margin-block: 15px;
   }
   header .menu .item_recomedaciones {
     -webkit-box-ordinal-group: 4;
@@ -163,13 +152,13 @@ header .menu .efectoMenu:hover img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 40px;
     width: 100%;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     color: white;
     letter-spacing: 0.1em;
     text-shadow: black 0em 0.1em 0.8em;
+    margin-block: 15px;
   }
   header .menu .item_contacto {
     -webkit-box-ordinal-group: 3;
@@ -188,6 +177,7 @@ header .menu .efectoMenu:hover img {
             justify-content: center;
     padding-top: 0px;
     height: 30px;
+    margin-block: 15px;
   }
   header .menu .item_contacto div {
     width: 20%;

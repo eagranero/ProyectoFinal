@@ -4,22 +4,41 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: stretch;
-	background-color: white;
 	
     &__contenedorPersonal{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		margin: 0%;
-		height: 75vh;
-		div{
+		background: url("../media/personal.webp");
+		background-size: 100%;
+		.contenedorTexto{
+			display: flex;
+			justify-content: right;
+			background: linear-gradient(90deg,rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) 50%, rgba(0, 0, 0, 0.7));	
+			background-size: 100%;
+			background-position: top;
 			width: 100%;
-			overflow: hidden;
-			.imagenPersonal {
-					width: 100%;
+			margin: 0%;
+			height: 75vh;
+			.textoBienvenida{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 50%;
+				div{
+					padding-block: 5vh;
+					color: white;
+					h2{
+						font-size: 3em;
+					}
+					p{
+						font-size: 2em;
+					}
+					h3{
+						font-size: 2em;
+					}	
+				}
 			}
-		}
+		}	
 	}
+
 	&__conenedorImagenesCategorias{
 		display: flex;
 		flex-direction: row;
@@ -51,33 +70,15 @@
 			transform:scale(1.1,1.1); 
 	   }
 	}
-	&__recomendaciones{ 
-		div{
-			display: flex;
-			flex-direction: row;
-			img{
-				width: 20%;
-				margin-bottom: 10px ;
-			}
-			p{
-				padding: 50px 0px ;
-			}
-		}
-	}
 
 	&__seccion{
-		padding: 1%;
 		&--formatoTituloSeccion{
-			padding-top: 25px;
-			font-size: 5em;
+			padding-block: 12px;
+			font-size: 4em;
 			letter-spacing: 0.1em;
 			font-weight: 500;
-			text-shadow: grey 0.1em 0.1em 0.2em;
-
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-			padding-inline: 0px;
+			margin: 0%;
+			padding-left: 5%;
 
 		}
 		&--formatoTextoContenido{
@@ -137,75 +138,198 @@
 		}
 		
 		&Contacto{
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-			padding-inline: 0px;
-		}
+			background-image: url("../media/fondosSecciones/contacto.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
 
-		&Docencia{
 			display: grid;
-			grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-			grid-template-rows: 100px 220px 220px 220px 220px 220px 220px 220px;
+			grid-template-columns: 3fr 5fr;
+			grid-template-rows: 70px 100%;
 			grid-template-areas:
-			"margenIzq0 tituloDocencia tituloDocencia tituloDocencia margenDer0" 
-			"margenIzq1 texto1 texto1 imagen1 margenDer1"
-			"margenIzq2 imagen2 texto2 texto2 margenDer2"
-			"margenIzq3 texto3 texto3 imagen3 margenDer3"
-			"margenIzq4 imagen4 texto4 texto4 margenDer4"
-			"margenIzq5 texto5 texto5 imagen5 margenDer5"
-			"margenIzq6 imagen6 texto6 texto6 margenDer6"
-			"margenIzq7 texto7 texto7 imagen7 margenDer7";
-			
-			.tituloDocencia{
-				grid-area: tituloDocencia;
+			"imagenContacto tituloContacto"
+			"imagenContacto textoContacto";
+			color: white;
+
+			.tituloContacto{
+				grid-area: tituloContacto;
+				background-color: rgba(0, 0, 0, 0.7);
+				border-bottom-style: solid;
+				border-bottom-color: white;
 			}
+			.imagenContacto{
+				grid-area: imagenContacto;			
+			}
+			.textoContacto{
+				grid-area: textoContacto;
+				padding-left: 5%;
+				background-color: rgba(0, 0, 0, 0.7);
+				padding-block: 2%;
 
-			@for $i from 1 through 7 {
-				&_texto#{$i} { 
-					grid-area: texto#{$i};
-					background-color: rgb(255, 245, 227);
-					margin: 10px 5px;
-					padding: 15px;
-					display: grid; 
-					@if $i % 2 == 0
-					{
-						text-align: left;
-					} @else{
-						text-align: right;
+				form{
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					.centrado{
+						text-align: center;
+						padding-inline: 0px;
+						width: 50%;
+						margin-block: 5px;
+						input, select, textarea{
+							display: block;
+							width: 100%;
+							height: calc(1.5em + .75rem + 2px);
+							padding: 0% 2%;
+							font-size: 1rem;
+							font-weight: 400;
+							line-height: 1.5;
+							color: #495057;
+							background-color: #fff;
+							background-clip: padding-box;
+							border: 1px solid #ced4da;
+							border-radius: .25rem;
+						}
+						
+						button{
+							color: #fff;
+							background-color: #007bff;
+							border-color: #007bff;
+							cursor: pointer;
+			
+							display: inline-block;
+							font-weight: 400;
+							text-align: center;
+							vertical-align: middle;
+							border: 1px solid transparent;
+							padding: .375rem .75rem;
+							font-size: 1rem;
+							line-height: 1.5;
+							border-radius: .25rem;
+						}
 					}
-
-					div{
-						align-self: center;
-					}
-
-					h2{
-						font-size: 3em;
-						letter-spacing: 0.1em;
-						margin-bottom: 0px;
-					}
-					h3{
-						font-size: 2em;
-						letter-spacing: 0.1em;
-						font-weight: 400;
-					}
-					p{
-						font-size: 1em;
-						letter-spacing: 0.1em;
-					}
-
 				}
 			}
 
-			@for $i from 1 through 7 {
-				&_imagen#{$i} { 
-					grid-area: imagen#{$i};
-					margin: 10px 5px;
-					overflow: hidden;
-					img{
-						width: 100%;
-						height: auto;
+
+		}
+
+		&Consultoria{
+			background-image: url("../media/fondosSecciones/consultoria.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			display: grid;
+			grid-template-columns: 3fr 5fr;
+			grid-template-rows: 70px 100%;
+			grid-template-areas:
+			"imagenConsultoria tituloConsultoria"
+			"imagenConsultoria textoConsultoria";
+			color: white;
+
+			.tituloConsultoria{
+				grid-area: tituloConsultoria;
+				background-color: rgba(0, 0, 0, 0.7);
+				border-bottom-style: solid;
+				border-bottom-color: white;
+			}
+			.imagenConsultoria{
+				grid-area: imagenConsultoria;			
+			}
+			.textoConsultoria{
+				grid-area: textoConsultoria;
+				padding-left: 5%;
+				background-color: rgba(0, 0, 0, 0.7);
+				letter-spacing: 1px;
+
+				ul{
+					margin-block: 5%;
+				}
+
+				h2{
+					font-size: 2.5em;
+					margin: 0px;
+					font-weight: 500;
+				}
+
+				h3{
+					font-size: 2em;
+					margin: 0px;
+					font-weight: 300;
+					margin-top: 1.5%;
+				}
+				h4{
+					font-size: 1.5em;
+					margin-top: 5px;
+					font-weight: 500;
+				}
+				h5{
+					font-size: 1.2em;
+					margin: 0px;
+					font-weight: 300;
+				}
+				h6{
+					font-size: 1.2em;
+					margin: 0px;
+					font-weight: 300;
+					font-style: italic;
+				}
+			}
+		}
+		
+
+		&Docencia{
+			background-image: url("../media/fondosSecciones/docencia2.webp");
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			display: grid;
+			grid-template-columns: 3fr 5fr;
+			grid-template-rows: 70px 100%;
+			grid-template-areas:
+			"imagenDocencia tituloDocencia"
+			"imagenDocencia textoDocencia";
+			color: white;
+
+			.tituloDocencia{
+				grid-area: tituloDocencia;
+				background-color: rgba(0, 0, 0, 0.7);
+				border-bottom-style: solid;
+				border-bottom-color: white;
+			}
+			.imagenDocencia{
+				grid-area: imagenDocencia;			
+			}
+			.textoDocencia{
+				grid-area: textoDocencia;
+				padding-left: 5%;
+				background-color: rgba(0, 0, 0, 0.7);
+				letter-spacing: 1px;
+				ul{
+					margin-block: 2.5%;
+					li{
+						margin-block: 2.5%;
 					}
+				}
+				h3{
+					font-size: 2em;
+					margin: 0px;
+					font-weight: 500;
+				}
+				h4{
+					font-size: 1.2em;
+					margin-bottom: 5px;
+					font-weight: 300;
+				}
+				h5{
+					font-size: 1.2em;
+					margin: 0px;
+					margin-top: 10px;
+					font-weight: 500;
+				}
+				h6{
+					font-size: 1.2em;
+					margin: 0px;
+					font-weight: 300;
+					font-style: italic;
 				}
 			}
 		}
@@ -218,15 +342,6 @@
 		th {
 			background-color:blue;
 			color: white;
-		}
-	}
-
-	form{
-		.centrado{
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-			padding-inline: 0px;
 		}
 	}
 }
@@ -322,10 +437,34 @@
 			flex-direction: column;
 			overflow: hidden;
 			height: auto;
-			div{
-				width: 120%;
-				margin-left: -10%;
+			background-size: cover;
+
+			.contenedorTexto{
+				margin:0px ;
+				padding: 0px;
+				justify-content: center;
+				background-color:rgba(0, 0, 0, 0.5) ;
+				/*background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) 20vh,rgba(0, 0, 0, 0.7) 60vh, rgba(0, 0, 0, 0));*/
+				.textoBienvenida{
+					width: 90%;
+					text-align: center;
+					div{
+						padding-block: 5vh;
+						color: white;
+						h2{
+							font-size: 5em;
+						}
+						p{
+							font-size: 3em;
+						}
+						h3{
+							font-size: 3em;
+						}	
+					}
+				}
+			
 			}
+
 		}
 		&__conenedorImagenesCategorias{
 			flex-direction: column;

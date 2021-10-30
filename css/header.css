@@ -62,19 +62,7 @@ header .menu {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 100%;
-}
-
-header .menu .item_home {
-  display: block;
-  width: 5%;
-  text-align: center;
-  height: 80%;
-}
-
-header .menu .item_recomedaciones {
-  width: 15%;
-  text-align: center;
+  height: 40px;
 }
 
 header .menu .item_recomedaciones a {
@@ -88,7 +76,6 @@ header .menu .item_recomedaciones a {
 header .menu .item_contacto {
   width: 5%;
   text-align: center;
-  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,6 +87,9 @@ header .menu .item_contacto {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .menu .item_contacto div {
@@ -108,7 +98,6 @@ header .menu .item_contacto div {
 
 header .menu .iconoMenu {
   height: 25px;
-  padding-top: 2%;
   -webkit-filter: drop-shadow(2px 1px 2px black);
           filter: drop-shadow(2px 1px 2px black);
 }
@@ -159,6 +148,7 @@ header .menu .efectoMenu:hover img {
     border-right-color: white;
     width: 29%;
     height: 30px;
+    text-align: center;
   }
   header .menu .item_recomedaciones {
     -webkit-box-ordinal-group: 4;

@@ -11,8 +11,6 @@
 
     <title>Licenciada Florencia Zini</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -22,91 +20,101 @@
 </head>
 
 <body>
-  	<header>
-	  	<div class="encabezado">
-				<h1 class="encabezado__texto encabezado__texto--titulo">FLORENCIA<span>ZINI</span></h1>
-				<h2 class="encabezado__texto encabezado__texto--subtitulo">LICENCIADA EN NUTRICIÓN</h2>
-		</div>
-	   	
-	    <nav class="menu navbar navbar-expand-lg navbar-light">   		
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-		   	</button>
-		   	<div class="collapse navbar-collapse" id="navbarScroll">
-		    	<div class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll menu__lista" style="max-height: 200px;">
-		      		<div class="nav-item item_icono"><a href="index.html"><img class="iconoMenu" src="media/home.png" alt="home"></a></div>
-					<!--<div class="nav-item item_texto"><a class="menu__lista--formatoTexto" href="index.html">INICIO </a></div> -->
-		       		<div class="nav-item item_texto"><a class="menu__lista--formatoTexto" href="recomendaciones.html">RECOMENDACIONES</a></div>
-		       		<div class="nav-item item_icono opcionesContacto">
-						<div>
-							<a href="https://www.facebook.com"><img class="iconoMenu" src="media/contacto/redes1.png" alt="imagen 1"></a>
-						</div>
-						<div>
-							<a href="https://www.instagram.com"><img class="iconoMenu" src="media/contacto/redes2.png" alt="imagen 1"></a>
-						</div>
-						<div>
-							<a href="https://www.twitter.com"><img class="iconoMenu" src="media/contacto/redes3.png" alt="imagen 1"></a>
-						</div>
-						<div>
-							<a href="contacto.html"><img class="iconoMenu" src="media/contacto/redes4.png" alt="imagen 1"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-	  	</nav>	   	
-   	</header>
+	<header>
+		<div class="encabezado">
+			  <h1 class="encabezado__texto encabezado__texto--titulo">FLORENCIA<span>ZINI</span></h1>
+			  <h2 class="encabezado__texto encabezado__texto--subtitulo">LICENCIADA EN NUTRICIÓN</h2>
+	  </div>
+		 
+	  <nav class="menu">   		
+			  <div class="item_home efectoMenu"><a href="index.html"><img class="iconoMenu" src="media/home.png" alt="home"></a></div>
+				 <div class="item_recomedaciones efectoMenu"><a class="menu__lista--formatoTexto" href="recomendaciones.html">RECOMENDACIONES</a></div>
+				 <div class="item_contacto efectoMenu">
+				  <div>
+					  <a href="https://www.facebook.com" target="_blank"><img class="iconoMenu" src="media/contacto/redes1.png" alt="imagen 1"></a>
+				  </div>
+				  <div>
+					  <a href="https://www.instagram.com" target="_blank"><img class="iconoMenu" src="media/contacto/redes2.png" alt="imagen 1"></a>
+				  </div>
+				  <div>
+					  <a href="https://www.twitter.com" target="_blank"><img class="iconoMenu" src="media/contacto/redes3.png" alt="imagen 1"></a>
+				  </div>
+				  <div>
+					  <a href="contacto.html"><img class="iconoMenu" src="media/contacto/redes4.png" alt="imagen 1"></a>
+				  </div>
+			  </div>
+		</nav>	   	
+	 </header>
 	
 	<div class="cuerpo">
-		<div class="cuerpo__seccion">	
-			<div><!--Respaldo profesional/titulos/cursos/etc-->
-				<h1 class="cuerpo__seccion--formatoTituloSeccion">CONSULTORIA NUTRICIONAL</h1>
-				<p class="cuerpo__seccion--formatoTextoContenido">Texto respecto a la formacion profesional y la experiencia que se tiene como respaldo</p>
-
-				<h2>Formacion profesional:</h2>	
-				<table border="1">
-		  			<thead>
-			  			<tr>
-			    			<th>Institucion</th>
-			    			<th>Titulo</th>
-			    			<th>Descripcion</th>
-			  			</tr>
-		  			</thead>
-		  			<tbody>
-			  			<tr>
-			    			<td>Universidad Catolica de Cuyo</td>
-			    			<td>Licenciatura en Nutrición</td>
-			    			<td>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </td>
-			  			</tr>
-			  			<tr>
-			    			<td>Institucion 2</td>
-			    			<td>Titulo 2</td>
-			    			<td>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </td>
-			  			</tr>
-			  			<tr>
-			    			<td>Institucion 2</td>
-			    			<td>Titulo 3</td>
-			    			<td>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </td>
-			  			</tr>
-			  			<tr>
-			    			<td>Institucion 3</td>
-			    			<td>Titulo 4</td>
-			    			<td>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </td>
-			  			</tr>
-			  			<tr>
-			    			<td>Institucion 3</td>
-			    			<td>Titulo 5</td>
-			    			<td>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </td>
-			  			</tr>
-			  			<tr>
-			    			<td>Institucion 6</td>
-			    			<td>Titulo 6</td>
-			    			<td>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </td>
-			  			</tr>
-		  			</tbody>
-				</table>
+		<div class="cuerpo__seccion">
+			<div class="cuerpo__seccionConsultoria">
+				<div class="tituloConsultoria">
+					<h1 class="cuerpo__seccion--formatoTituloSeccion">CONSULTORIA NUTRICIONAL</h1>
+				</div>
+				<div class="textoConsultoria">
+						
+					<ul>
+						<h2>Experiencia Clinica</h2>
+						<h3>Consultorio Nutricional</h3>
+						<li>
+							<h4>Fundación CenCor</h4>
+							<h6>2017-2019</h6>	
+						</li>
+						<li>
+							<h4>Clínica Tahué – Clínica del Oeste</h4>
+							<h6>2015-16</h6>
+						</li>
+						
+						<h3>Nutricion Clinica - Internado</h3>
+						<li>
+							<h4>Sanatorio Virgen de Lourdes</h4>
+							<h6>2017</h6>	
+						</li>
+					</ul>
+					
+					
+					<ul>
+						<h2>Formacion Profesional</h2>
+						<h3>Estudios de Grado</h3>
+						<li>
+							<h4>Licenciatura en Nutrición </h4>
+							<h5>Universidad Catolica de Cuyo</h5>
+							<h6>2010 - 2015</h6>
+						</li>
+				
+						<h3>Estudios de Posgrado</h3>
+						<li>
+							<h4>Curso de Posgrado Universitario sobre Obesidad </h4>
+							<h5>Universidad Favaloro</h5>
+							<h6>2015 (300hs)</h6>
+						</li>
+						<li>
+							<h4>Curso de Actualizacion sobre Embarazo  y Nutricion</h4>
+							<h5>Universidad Austral</h5>
+							<h6>2018 (60hs)</h6>
+						</li>
+						<li>
+							<h4>Curso de Nutricion, Gastronomia y Salud</h4>
+							<h5>Sociedad Argentina de Nutrición Clínica</h5>
+							<h6>2018 (150hs)</h6>
+						</li>
+						<li>
+							<h4>Curso Avanzado en Soporte Nutricional</h4>
+							<h5>Colegio Mexicano de Nutriólogos</h5>
+							<h6>2019 (184hs)</h6>
+						</li>
+						<li>
+							<h4>Curso Universitario de Actualizacion en Medicina Ayurveda</h4>
+							<h5>Fundación de Salud Ayurveda Prema - Universidad del Gran Rosario</h5>
+							<h6>2021 - En curso</h6>
+						</li>
+					</ul>
+					
+				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 	
 
 	<footer class="footer">

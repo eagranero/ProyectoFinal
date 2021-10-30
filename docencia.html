@@ -11,8 +11,6 @@
 
     <title>Licenciada Florencia Zini</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -22,39 +20,31 @@
 </head>
 
 <body>
-  	<header>
-	  	<div class="encabezado">
-				<h1 class="encabezado__texto encabezado__texto--titulo">FLORENCIA<span>ZINI</span></h1>
-				<h2 class="encabezado__texto encabezado__texto--subtitulo">LICENCIADA EN NUTRICIÓN</h2>
-		</div>
-	   	
-	    <nav class="menu navbar navbar-expand-sm navbar-light">   		
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-		   	</button>
-		   	<div class="collapse navbar-collapse" id="navbarScroll">
-		    	<div class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll menu__lista" style="max-height: 200px;">
-		      		<div class="nav-item item_icono"><a href="index.html"><img class="iconoMenu" src="media/home.png" alt="home"></a></div>
-					<!--<div class="nav-item item_texto"><a class="menu__lista--formatoTexto" href="index.html">INICIO </a></div> -->
-		       		<div class="nav-item item_texto"><a class="menu__lista--formatoTexto" href="recomendaciones.html">RECOMENDACIONES</a></div>
-		       		<div class="nav-item item_icono opcionesContacto">
-						<div>
-							<a href="https://www.facebook.com" target="_blank"><img class="iconoMenu" src="media/contacto/redes1.png" alt="imagen 1"></a>
-						</div>
-						<div>
-							<a href="https://www.instagram.com" target="_blank"><img class="iconoMenu" src="media/contacto/redes2.png" alt="imagen 1"></a>
-						</div>
-						<div>
-							<a href="https://www.twitter.com" target="_blank"><img class="iconoMenu" src="media/contacto/redes3.png" alt="imagen 1"></a>
-						</div>
-						<div>
-							<a href="contacto.html"><img class="iconoMenu" src="media/contacto/redes4.png" alt="imagen 1"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-	  	</nav>	   	
-   	</header>
+	<header>
+		<div class="encabezado">
+			  <h1 class="encabezado__texto encabezado__texto--titulo">FLORENCIA<span>ZINI</span></h1>
+			  <h2 class="encabezado__texto encabezado__texto--subtitulo">LICENCIADA EN NUTRICIÓN</h2>
+	  </div>
+		 
+	  <nav class="menu">   		
+			  <div class="item_home efectoMenu"><a href="index.html"><img class="iconoMenu" src="media/home.png" alt="home"></a></div>
+				 <div class="item_recomedaciones efectoMenu"><a class="menu__lista--formatoTexto" href="recomendaciones.html">RECOMENDACIONES</a></div>
+				 <div class="item_contacto efectoMenu">
+				  <div>
+					  <a href="https://www.facebook.com" target="_blank"><img class="iconoMenu" src="media/contacto/redes1.png" alt="imagen 1"></a>
+				  </div>
+				  <div>
+					  <a href="https://www.instagram.com" target="_blank"><img class="iconoMenu" src="media/contacto/redes2.png" alt="imagen 1"></a>
+				  </div>
+				  <div>
+					  <a href="https://www.twitter.com" target="_blank"><img class="iconoMenu" src="media/contacto/redes3.png" alt="imagen 1"></a>
+				  </div>
+				  <div>
+					  <a href="contacto.html"><img class="iconoMenu" src="media/contacto/redes4.png" alt="imagen 1"></a>
+				  </div>
+			  </div>
+		</nav>	   	
+	 </header>
 	
 	<div class="cuerpo"><!--Toda la info respecto a trayectoria educativa-->
 		<div class="cuerpo__seccion">
@@ -62,85 +52,47 @@
 				<div class="tituloDocencia">
 					<h1 class="cuerpo__seccion--formatoTituloSeccion">DOCENCIA</h1>
 				</div>
-				<div class="cuerpo__seccionDocencia_texto1">
-					<div>
-						<h2>Fisiología</h2>
-						<h3>Profesora Titular</h3>
-						<p>Licenciatura en Nutrición - Universidad Catolica de Cuyo</p>
-						<p>2016-Actualidad</p>
-					</div>
-				</div>
-				<div class="cuerpo__seccionDocencia_imagen1">
-					<img src="media/fisiologia_general.jpg" alt="Fisiologia">
-				</div>
-				<div class="cuerpo__seccionDocencia_texto2">
-					<div>
-						<h2>Fisiología del Deporte</h2>
-						<h3>Profesora Titular</h3>
-						<p>Licenciatura en Nutrición - Universidad Catolica de Cuyo</p>
-						<p>2020-Actualidad</p>
-					</div>
-				</div>
-				<div class="cuerpo__seccionDocencia_imagen2">
-					<img src="media/fisiologia_deporte.jpg" alt="Fisiologia del Deporte">
+				<div class="textoDocencia">
+					<ul>
+						<li>
+							<h3>PROFESORA TITULAR</h3>
+							<h4>Licenciatura en Nutrición - Universidad Catolica de Cuyo</h4>
+							
+							<h5>Catedra Fisiologia</h5>
+							<h6>2016 - Actualidad</h6>
 
-				</div>
-				<div class="cuerpo__seccionDocencia_texto3">
-					<div>
-						<h2>Anatomía II</h2>
-						<h3>Profesora Asociada</h3>
-						<p>Licenciatura en Nutrición - Universidad Catolica de Cuyo</p> 
-						<p>2017-Actualidad</p>
-					</div>
-				</div>
-				<div class="cuerpo__seccionDocencia_imagen3">
-					<img  src="media/anatomia.webp" alt="Anatomia">
-				</div>
-				<div class="cuerpo__seccionDocencia_texto4">
-					<div>
-						<h2>Economía Familiar y Alimentación Institucional</h2>
-						<h3>Profesora Asociada</h3>
-						<p>Licenciatura en Nutrición - Universidad Catolica de Cuyo</p>
-						<p>2016-Actualidad</p>
-					</div>
-				</div>
-				<div class="cuerpo__seccionDocencia_imagen4">
-					<img  src="media/economia_nutricion.jpg" alt="Economia">
-				</div>
-				<div class="cuerpo__seccionDocencia_texto5">
-					<div>
-						<h2>Nutrición en Salud Pública</h2>
-						<h3>Jefa de Trabajos Practicos</h3>
-						<p>Licenciatura en Nutrición - Universidad Catolica de Cuyo</p>
-						<p>2016-Actualidad</p>
-					</div>
-				</div>
-				<div class="cuerpo__seccionDocencia_imagen5">
-					<img src="media/salud_publica.jpg" alt="Salud Publica">
-				</div>
-				
-				<div class="cuerpo__seccionDocencia_texto6">
-					<div>
-						<h2>Evaluación Nutricional I</h2>
-						<h3>Ayudante Diplomada</h3> 
-						<p>Licenciatura en Nutrición - Universidad Catolica de Cuyo</p>
-						<p>2015-2016</p>
-					</div>
-				</div>	
-				<div class="cuerpo__seccionDocencia_imagen6">
-					<img height="100%"  src="media/evaluacion.jpg" alt="Evaluacion Nutricional">
-				</div>
-				
-				<div class="cuerpo__seccionDocencia_texto7">
-					<div>
-						<h2>Fisiopatología del Adulto</h2>
-						<h3>Ayudante Diplomada</h3> 
-						<p>Licenciatura en Nutrición - Universidad Catolica de Cuyo</p>
-						<p>2015-2016</p>
-					</div>
-				</div>	
-				<div class="cuerpo__seccionDocencia_imagen7">
-					<img width="100%"  src="media/fisiopatologia.jpg" alt="Fisiopatologia">
+							<h5>Catedra Fisiologia del Deporte</h5>
+							<h6>2020 - Actualidad</h6>
+						</li>
+						<li>
+							<h3>PROFESORA ASOCIADA</h3>
+							<h4>Licenciatura en Nutrición - Universidad Catolica de Cuyo</h4>	
+							
+							<h5>Catedra Anatomia II</h5>
+							<h6>2017 - Actualidad</h6>
+
+							<h5>Catedra Economia Familiar y Alimentacion Institucional</h5>
+							<h6>2016 - Actualidad</h6>
+						</li>
+						<li>
+							<h3>JTP - JEFA DE TRABAJOS PRACTICOS</h3>
+							<h4>Licenciatura en Nutrición - Universidad Catolica de Cuyo</h4>	
+							
+							<h5>Catedra Nutricion en Salud Publica</h5>
+							<h6>2016</h6>
+						</li>
+						<li>
+							<h3>AYUDANTE DIPLOMADA</h3>
+							<h4>Licenciatura en Nutrición - Universidad Catolica de Cuyo</h4>	
+							
+							<h5>Catedra Evaluacion Nutricional I</h5>
+							<h6>2015-2016</h6>
+
+							<h5>Catedra Fisiopatologia del Adulto</h5>
+							<h6>2015-2016</h6>
+						</li>
+					</ul>
+					
 				</div>
 			</div>
 		</div>

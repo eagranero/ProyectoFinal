@@ -1028,16 +1028,6 @@ header .menu .iconoMenu {
   }
   .cuerpo__seccionConsultoria .textoConsultoria {
     padding: 10px 20px 10px 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .cuerpo__seccionConsultoria .textoConsultoria ul {
     margin-block: 15px;
@@ -1085,16 +1075,6 @@ header .menu .iconoMenu {
   }
   .cuerpo__seccionDocencia .textoDocencia {
     padding: 10px 20px 10px 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .cuerpo__seccionDocencia .textoDocencia ul {
     margin-block: 15px;

@@ -8,7 +8,7 @@
 	
     &__contenedorPersonal{
 		background: url("../media/personal.webp");
-		background-size: 100%;
+		background-size: cover;
 		.contenedorTexto{
 			display: flex;
 			justify-content: right;
@@ -92,48 +92,83 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			display: grid;
-			grid-template-columns: 1fr 1fr 4fr 1fr;
-			grid-template-rows: 100px 220px 220px 220px 220px;
+			grid-template-columns: 1fr 2fr 5fr 1fr;
+			grid-template-rows: 70px 300px 300px 300px 300px 300px 300px;
 			grid-template-areas:
 			"margenIzq0 tituloRecomendaciones tituloRecomendaciones margenDer0" 
 			"margenIzq1 imagen1 texto1 margenDer1"
 			"margenIzq2 imagen2 texto2 margenDer2"
 			"margenIzq3 imagen3 texto3 margenDer3"
-			"margenIzq4 imagen4 texto4 margenDer4";
+			"margenIzq4 imagen4 texto4 margenDer4"
+			"margenIzq5 imagen5 texto5 margenDer5"
+			"margenIzq6 imagen6 texto6 margenDer6";
+			
 
 			.tituloRecomendaciones{
 				grid-area: tituloRecomendaciones;
 				color: white;
+				border-bottom-style: solid;
+				border-bottom-color: white;
 			}
 
-			@for $i from 1 through 4 {
+			@for $i from -10 through 10 {
+				.rot_#{$i}deg{
+					transform: rotate(#{$i}deg);
+				}
+			}
+
+			@for $i from 1 through 6 {
 				&_texto#{$i} { 
 					grid-area: texto#{$i};
-					background-color: rgb(255, 245, 227);
+					background-color: rgba(255, 245, 227, 0);
 					margin: 10px 5px;
 					padding: 15px;
-					display: grid; 
+					display: flex; 
+					align-items: center;
+					flex-direction: column;
+					justify-content: space-around;
 
 					div{
 						align-self: center;
 					}
 
 					p{
-						font-size: 1em;
-						letter-spacing: 0.1em;
+						font-family: 'Caveat', cursive;
+						font-size: 4em;
+						color: white;
+						
+					}
+					
+					h6{
+						color: white;
+						text-align: right;
+						width: 100%;
+						font-size: 2em;
+						font-family: 'Caveat', cursive;
 					}
 
 				}
 			}
 
-			@for $i from 1 through 4 {
+			@for $i from 1 through 6 {
 				&_imagen#{$i} { 
 					grid-area: imagen#{$i};
 					margin: 10px 5px;
 					overflow: hidden;
-					img{
-						width: 100%;
-						height: auto;
+					
+					.foto{
+						height: 100%;
+						position: absolute; 
+						scale: 75%;
+						z-index: 1;
+					}
+					.cinta{
+						height: 25%;
+						position: relative;
+						top: -2px;
+						left: 40%;
+						z-index: 2;
+						transform: rotate(130deg);
 					}
 				}
 			}
@@ -285,6 +320,7 @@
 				background-color: white;
 				justify-content: space-around;
 				align-items: center;
+				height: auto;
 				img{
 					width: 75px;
 				}
@@ -293,7 +329,7 @@
 		
 
 		&Docencia{
-			background-image: url("../media/fondosSecciones/docencia.webp");
+			background-image: url("../media/fondosSecciones/docencia.jpg");
 			background-repeat: no-repeat;
 			background-size: cover;
 
@@ -452,6 +488,7 @@
 			overflow: hidden;
 			height: auto;
 			background-size: cover;
+			background-position: 15%;
 
 			.contenedorTexto{
 				margin:0px ;
@@ -543,7 +580,10 @@
 				.logosConsultoria{
 					flex-direction: row;
 					flex-wrap: wrap;
-					height: 210px;
+					padding: 2%;
+					img{
+						width: 21%;
+					}
 				}
 
 				.imagenConsultoria{
@@ -683,4 +723,18 @@
 		}
 	}
 }
+
+@media only screen and (min-width: 575px) and (max-width: 1024px) {
+
+	.cuerpo{
+
+		&__seccion{
+			&Consultoria{
+				grid-template-rows: 100px auto auto;
+			}
+		}
+	}
+}
+
+
 

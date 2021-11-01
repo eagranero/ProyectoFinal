@@ -19,7 +19,7 @@
 
 .cuerpo__contenedorPersonal {
   background: url("../media/personal.webp");
-  background-size: 100%;
+  background-size: cover;
 }
 
 .cuerpo__contenedorPersonal .contenedorTexto {
@@ -138,11 +138,11 @@
   background-size: cover;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 4fr 1fr;
-      grid-template-columns: 1fr 1fr 4fr 1fr;
-  -ms-grid-rows: 100px 220px 220px 220px 220px;
-      grid-template-rows: 100px 220px 220px 220px 220px;
-      grid-template-areas: "margenIzq0 tituloRecomendaciones tituloRecomendaciones margenDer0"  "margenIzq1 imagen1 texto1 margenDer1" "margenIzq2 imagen2 texto2 margenDer2" "margenIzq3 imagen3 texto3 margenDer3" "margenIzq4 imagen4 texto4 margenDer4";
+  -ms-grid-columns: 1fr 2fr 5fr 1fr;
+      grid-template-columns: 1fr 2fr 5fr 1fr;
+  -ms-grid-rows: 70px 300px 300px 300px 300px 300px 300px;
+      grid-template-rows: 70px 300px 300px 300px 300px 300px 300px;
+      grid-template-areas: "margenIzq0 tituloRecomendaciones tituloRecomendaciones margenDer0"  "margenIzq1 imagen1 texto1 margenDer1" "margenIzq2 imagen2 texto2 margenDer2" "margenIzq3 imagen3 texto3 margenDer3" "margenIzq4 imagen4 texto4 margenDer4" "margenIzq5 imagen5 texto5 margenDer5" "margenIzq6 imagen6 texto6 margenDer6";
 }
 
 .cuerpo__seccionRecomendaciones .tituloRecomendaciones {
@@ -151,17 +151,134 @@
   -ms-grid-column-span: 2;
   grid-area: tituloRecomendaciones;
   color: white;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+}
+
+.cuerpo__seccionRecomendaciones .rot_-10deg {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_-9deg {
+  -webkit-transform: rotate(-9deg);
+          transform: rotate(-9deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_-8deg {
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_-7deg {
+  -webkit-transform: rotate(-7deg);
+          transform: rotate(-7deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_-6deg {
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_-5deg {
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_-4deg {
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_-3deg {
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_-2deg {
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_-1deg {
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_0deg {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_1deg {
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_2deg {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_3deg {
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_4deg {
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_5deg {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_6deg {
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_7deg {
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_8deg {
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_9deg {
+  -webkit-transform: rotate(9deg);
+          transform: rotate(9deg);
+}
+
+.cuerpo__seccionRecomendaciones .rot_10deg {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
 .cuerpo__seccionRecomendaciones_texto1 {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: texto1;
-  background-color: #fff5e3;
+  background-color: rgba(255, 245, 227, 0);
   margin: 10px 5px;
   padding: 15px;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .cuerpo__seccionRecomendaciones_texto1 div {
@@ -171,19 +288,38 @@
 }
 
 .cuerpo__seccionRecomendaciones_texto1 p {
-  font-size: 1em;
-  letter-spacing: 0.1em;
+  font-family: 'Caveat', cursive;
+  font-size: 4em;
+  color: white;
+}
+
+.cuerpo__seccionRecomendaciones_texto1 h6 {
+  color: white;
+  text-align: right;
+  width: 100%;
+  font-size: 2em;
+  font-family: 'Caveat', cursive;
 }
 
 .cuerpo__seccionRecomendaciones_texto2 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: texto2;
-  background-color: #fff5e3;
+  background-color: rgba(255, 245, 227, 0);
   margin: 10px 5px;
   padding: 15px;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .cuerpo__seccionRecomendaciones_texto2 div {
@@ -193,19 +329,38 @@
 }
 
 .cuerpo__seccionRecomendaciones_texto2 p {
-  font-size: 1em;
-  letter-spacing: 0.1em;
+  font-family: 'Caveat', cursive;
+  font-size: 4em;
+  color: white;
+}
+
+.cuerpo__seccionRecomendaciones_texto2 h6 {
+  color: white;
+  text-align: right;
+  width: 100%;
+  font-size: 2em;
+  font-family: 'Caveat', cursive;
 }
 
 .cuerpo__seccionRecomendaciones_texto3 {
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: texto3;
-  background-color: #fff5e3;
+  background-color: rgba(255, 245, 227, 0);
   margin: 10px 5px;
   padding: 15px;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .cuerpo__seccionRecomendaciones_texto3 div {
@@ -215,19 +370,38 @@
 }
 
 .cuerpo__seccionRecomendaciones_texto3 p {
-  font-size: 1em;
-  letter-spacing: 0.1em;
+  font-family: 'Caveat', cursive;
+  font-size: 4em;
+  color: white;
+}
+
+.cuerpo__seccionRecomendaciones_texto3 h6 {
+  color: white;
+  text-align: right;
+  width: 100%;
+  font-size: 2em;
+  font-family: 'Caveat', cursive;
 }
 
 .cuerpo__seccionRecomendaciones_texto4 {
   -ms-grid-row: 5;
   -ms-grid-column: 3;
   grid-area: texto4;
-  background-color: #fff5e3;
+  background-color: rgba(255, 245, 227, 0);
   margin: 10px 5px;
   padding: 15px;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .cuerpo__seccionRecomendaciones_texto4 div {
@@ -237,8 +411,99 @@
 }
 
 .cuerpo__seccionRecomendaciones_texto4 p {
-  font-size: 1em;
-  letter-spacing: 0.1em;
+  font-family: 'Caveat', cursive;
+  font-size: 4em;
+  color: white;
+}
+
+.cuerpo__seccionRecomendaciones_texto4 h6 {
+  color: white;
+  text-align: right;
+  width: 100%;
+  font-size: 2em;
+  font-family: 'Caveat', cursive;
+}
+
+.cuerpo__seccionRecomendaciones_texto5 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: texto5;
+  background-color: rgba(255, 245, 227, 0);
+  margin: 10px 5px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cuerpo__seccionRecomendaciones_texto5 div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cuerpo__seccionRecomendaciones_texto5 p {
+  font-family: 'Caveat', cursive;
+  font-size: 4em;
+  color: white;
+}
+
+.cuerpo__seccionRecomendaciones_texto5 h6 {
+  color: white;
+  text-align: right;
+  width: 100%;
+  font-size: 2em;
+  font-family: 'Caveat', cursive;
+}
+
+.cuerpo__seccionRecomendaciones_texto6 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+  grid-area: texto6;
+  background-color: rgba(255, 245, 227, 0);
+  margin: 10px 5px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cuerpo__seccionRecomendaciones_texto6 div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cuerpo__seccionRecomendaciones_texto6 p {
+  font-family: 'Caveat', cursive;
+  font-size: 4em;
+  color: white;
+}
+
+.cuerpo__seccionRecomendaciones_texto6 h6 {
+  color: white;
+  text-align: right;
+  width: 100%;
+  font-size: 2em;
+  font-family: 'Caveat', cursive;
 }
 
 .cuerpo__seccionRecomendaciones_imagen1 {
@@ -249,9 +514,21 @@
   overflow: hidden;
 }
 
-.cuerpo__seccionRecomendaciones_imagen1 img {
-  width: 100%;
-  height: auto;
+.cuerpo__seccionRecomendaciones_imagen1 .foto {
+  height: 100%;
+  position: absolute;
+  scale: 75%;
+  z-index: 1;
+}
+
+.cuerpo__seccionRecomendaciones_imagen1 .cinta {
+  height: 25%;
+  position: relative;
+  top: -2px;
+  left: 40%;
+  z-index: 2;
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
 }
 
 .cuerpo__seccionRecomendaciones_imagen2 {
@@ -262,9 +539,21 @@
   overflow: hidden;
 }
 
-.cuerpo__seccionRecomendaciones_imagen2 img {
-  width: 100%;
-  height: auto;
+.cuerpo__seccionRecomendaciones_imagen2 .foto {
+  height: 100%;
+  position: absolute;
+  scale: 75%;
+  z-index: 1;
+}
+
+.cuerpo__seccionRecomendaciones_imagen2 .cinta {
+  height: 25%;
+  position: relative;
+  top: -2px;
+  left: 40%;
+  z-index: 2;
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
 }
 
 .cuerpo__seccionRecomendaciones_imagen3 {
@@ -275,9 +564,21 @@
   overflow: hidden;
 }
 
-.cuerpo__seccionRecomendaciones_imagen3 img {
-  width: 100%;
-  height: auto;
+.cuerpo__seccionRecomendaciones_imagen3 .foto {
+  height: 100%;
+  position: absolute;
+  scale: 75%;
+  z-index: 1;
+}
+
+.cuerpo__seccionRecomendaciones_imagen3 .cinta {
+  height: 25%;
+  position: relative;
+  top: -2px;
+  left: 40%;
+  z-index: 2;
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
 }
 
 .cuerpo__seccionRecomendaciones_imagen4 {
@@ -288,9 +589,71 @@
   overflow: hidden;
 }
 
-.cuerpo__seccionRecomendaciones_imagen4 img {
-  width: 100%;
-  height: auto;
+.cuerpo__seccionRecomendaciones_imagen4 .foto {
+  height: 100%;
+  position: absolute;
+  scale: 75%;
+  z-index: 1;
+}
+
+.cuerpo__seccionRecomendaciones_imagen4 .cinta {
+  height: 25%;
+  position: relative;
+  top: -2px;
+  left: 40%;
+  z-index: 2;
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
+}
+
+.cuerpo__seccionRecomendaciones_imagen5 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: imagen5;
+  margin: 10px 5px;
+  overflow: hidden;
+}
+
+.cuerpo__seccionRecomendaciones_imagen5 .foto {
+  height: 100%;
+  position: absolute;
+  scale: 75%;
+  z-index: 1;
+}
+
+.cuerpo__seccionRecomendaciones_imagen5 .cinta {
+  height: 25%;
+  position: relative;
+  top: -2px;
+  left: 40%;
+  z-index: 2;
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
+}
+
+.cuerpo__seccionRecomendaciones_imagen6 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
+  grid-area: imagen6;
+  margin: 10px 5px;
+  overflow: hidden;
+}
+
+.cuerpo__seccionRecomendaciones_imagen6 .foto {
+  height: 100%;
+  position: absolute;
+  scale: 75%;
+  z-index: 1;
+}
+
+.cuerpo__seccionRecomendaciones_imagen6 .cinta {
+  height: 25%;
+  position: relative;
+  top: -2px;
+  left: 40%;
+  z-index: 2;
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
 }
 
 .cuerpo__seccionContacto {
@@ -476,6 +839,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: auto;
 }
 
 .cuerpo__seccionConsultoria .logosConsultoria img {
@@ -483,7 +847,7 @@
 }
 
 .cuerpo__seccionDocencia {
-  background-image: url("../media/fondosSecciones/docencia.webp");
+  background-image: url("../media/fondosSecciones/docencia.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: -ms-grid;
@@ -660,6 +1024,7 @@
     overflow: hidden;
     height: auto;
     background-size: cover;
+    background-position: 15%;
   }
   .cuerpo__contenedorPersonal .contenedorTexto {
     margin: 0px;
@@ -763,7 +1128,10 @@
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 210px;
+    padding: 2%;
+  }
+  .cuerpo__seccionConsultoria .logosConsultoria img {
+    width: 21%;
   }
   .cuerpo__seccionConsultoria .imagenConsultoria {
     -ms-grid-row: 1;
@@ -909,6 +1277,13 @@
     margin: 0px;
     font-weight: 300;
     font-style: italic;
+  }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 1024px) {
+  .cuerpo__seccionConsultoria {
+    -ms-grid-rows: 100px auto auto;
+        grid-template-rows: 100px auto auto;
   }
 }
 /*# sourceMappingURL=cuerpo.css.map */

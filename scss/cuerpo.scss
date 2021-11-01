@@ -4,7 +4,6 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: stretch;
-	margin-block: 3px;
 	
     &__contenedorPersonal{
 		background: url("../media/personal.webp");
@@ -549,7 +548,46 @@
 				color: rgb(100, 100, 100);
 				font-size:1.5em;
 			}
+
+			&Recomendaciones{
+
+				grid-template-columns:  40% 60% ;
+				grid-template-rows: 70px 200px 200px 200px 200px 200px 200px;
+				grid-template-areas:
+				" tituloRecomendaciones tituloRecomendaciones " 
+				" imagen1 texto1 "
+				" imagen2 texto2 "
+				" imagen3 texto3 "
+				" imagen4 texto4 "
+				" imagen5 texto5 "
+				" imagen6 texto6 ";
 			
+				.tituloRecomendaciones{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+
+				@for $i from 1 through 6 {
+					&_texto#{$i} { 
+				
+						h6{
+							font-size: 2.5em;
+						}
+	
+					}
+				}
+
+				@for $i from 1 through 6 {
+					&_imagen#{$i} { 
+						.cinta{
+							display: none;
+						}
+					}
+				}
+
+			}
+					
 			&Contacto{
 				grid-template-columns: 0fr 5fr;
 				grid-template-rows: 100px 100%;
@@ -731,6 +769,29 @@
 		&__seccion{
 			&Consultoria{
 				grid-template-rows: 100px auto auto;
+			}
+			
+			&Recomendaciones{
+
+				grid-template-columns:  250px auto ;
+				grid-template-rows: 70px 250px 250px 250px 250px 250px 250px;
+				grid-template-areas:
+				" tituloRecomendaciones tituloRecomendaciones " 
+				" imagen1 texto1 "
+				" imagen2 texto2 "
+				" imagen3 texto3 "
+				" imagen4 texto4 "
+				" imagen5 texto5 "
+				" imagen6 texto6 ";
+
+				@for $i from 1 through 6 {
+					&_imagen#{$i} { 
+						.cinta{
+							display: none;
+						}
+					}
+				}
+			
 			}
 		}
 	}

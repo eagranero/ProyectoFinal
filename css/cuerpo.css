@@ -14,7 +14,6 @@
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  margin-block: 3px;
 }
 
 .cuerpo__contenedorPersonal {
@@ -1085,6 +1084,61 @@
     color: #646464;
     font-size: 1.5em;
   }
+  .cuerpo__seccionRecomendaciones {
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+    -ms-grid-rows: 70px 200px 200px 200px 200px 200px 200px;
+        grid-template-rows: 70px 200px 200px 200px 200px 200px 200px;
+        grid-template-areas: " tituloRecomendaciones tituloRecomendaciones "  " imagen1 texto1 " " imagen2 texto2 " " imagen3 texto3 " " imagen4 texto4 " " imagen5 texto5 " " imagen6 texto6 ";
+  }
+  .cuerpo__seccionRecomendaciones .tituloRecomendaciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cuerpo__seccionRecomendaciones_texto1 h6 {
+    font-size: 2.5em;
+  }
+  .cuerpo__seccionRecomendaciones_texto2 h6 {
+    font-size: 2.5em;
+  }
+  .cuerpo__seccionRecomendaciones_texto3 h6 {
+    font-size: 2.5em;
+  }
+  .cuerpo__seccionRecomendaciones_texto4 h6 {
+    font-size: 2.5em;
+  }
+  .cuerpo__seccionRecomendaciones_texto5 h6 {
+    font-size: 2.5em;
+  }
+  .cuerpo__seccionRecomendaciones_texto6 h6 {
+    font-size: 2.5em;
+  }
+  .cuerpo__seccionRecomendaciones_imagen1 .cinta {
+    display: none;
+  }
+  .cuerpo__seccionRecomendaciones_imagen2 .cinta {
+    display: none;
+  }
+  .cuerpo__seccionRecomendaciones_imagen3 .cinta {
+    display: none;
+  }
+  .cuerpo__seccionRecomendaciones_imagen4 .cinta {
+    display: none;
+  }
+  .cuerpo__seccionRecomendaciones_imagen5 .cinta {
+    display: none;
+  }
+  .cuerpo__seccionRecomendaciones_imagen6 .cinta {
+    display: none;
+  }
   .cuerpo__seccionContacto {
     -ms-grid-columns: 0fr 5fr;
         grid-template-columns: 0fr 5fr;
@@ -1284,6 +1338,31 @@
   .cuerpo__seccionConsultoria {
     -ms-grid-rows: 100px auto auto;
         grid-template-rows: 100px auto auto;
+  }
+  .cuerpo__seccionRecomendaciones {
+    -ms-grid-columns: 250px auto;
+        grid-template-columns: 250px auto;
+    -ms-grid-rows: 70px 250px 250px 250px 250px 250px 250px;
+        grid-template-rows: 70px 250px 250px 250px 250px 250px 250px;
+        grid-template-areas: " tituloRecomendaciones tituloRecomendaciones "  " imagen1 texto1 " " imagen2 texto2 " " imagen3 texto3 " " imagen4 texto4 " " imagen5 texto5 " " imagen6 texto6 ";
+  }
+  .cuerpo__seccionRecomendaciones_imagen1 .cinta {
+    display: none;
+  }
+  .cuerpo__seccionRecomendaciones_imagen2 .cinta {
+    display: none;
+  }
+  .cuerpo__seccionRecomendaciones_imagen3 .cinta {
+    display: none;
+  }
+  .cuerpo__seccionRecomendaciones_imagen4 .cinta {
+    display: none;
+  }
+  .cuerpo__seccionRecomendaciones_imagen5 .cinta {
+    display: none;
+  }
+  .cuerpo__seccionRecomendaciones_imagen6 .cinta {
+    display: none;
   }
 }
 /*# sourceMappingURL=cuerpo.css.map */

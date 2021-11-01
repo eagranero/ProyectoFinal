@@ -520,16 +520,6 @@
   z-index: 1;
 }
 
-.cuerpo__seccionRecomendaciones_imagen1 .cinta {
-  height: 25%;
-  position: relative;
-  top: -2px;
-  left: 40%;
-  z-index: 2;
-  -webkit-transform: rotate(130deg);
-          transform: rotate(130deg);
-}
-
 .cuerpo__seccionRecomendaciones_imagen2 {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
@@ -543,16 +533,6 @@
   position: absolute;
   scale: 75%;
   z-index: 1;
-}
-
-.cuerpo__seccionRecomendaciones_imagen2 .cinta {
-  height: 25%;
-  position: relative;
-  top: -2px;
-  left: 40%;
-  z-index: 2;
-  -webkit-transform: rotate(130deg);
-          transform: rotate(130deg);
 }
 
 .cuerpo__seccionRecomendaciones_imagen3 {
@@ -570,16 +550,6 @@
   z-index: 1;
 }
 
-.cuerpo__seccionRecomendaciones_imagen3 .cinta {
-  height: 25%;
-  position: relative;
-  top: -2px;
-  left: 40%;
-  z-index: 2;
-  -webkit-transform: rotate(130deg);
-          transform: rotate(130deg);
-}
-
 .cuerpo__seccionRecomendaciones_imagen4 {
   -ms-grid-row: 5;
   -ms-grid-column: 2;
@@ -593,16 +563,6 @@
   position: absolute;
   scale: 75%;
   z-index: 1;
-}
-
-.cuerpo__seccionRecomendaciones_imagen4 .cinta {
-  height: 25%;
-  position: relative;
-  top: -2px;
-  left: 40%;
-  z-index: 2;
-  -webkit-transform: rotate(130deg);
-          transform: rotate(130deg);
 }
 
 .cuerpo__seccionRecomendaciones_imagen5 {
@@ -620,16 +580,6 @@
   z-index: 1;
 }
 
-.cuerpo__seccionRecomendaciones_imagen5 .cinta {
-  height: 25%;
-  position: relative;
-  top: -2px;
-  left: 40%;
-  z-index: 2;
-  -webkit-transform: rotate(130deg);
-          transform: rotate(130deg);
-}
-
 .cuerpo__seccionRecomendaciones_imagen6 {
   -ms-grid-row: 7;
   -ms-grid-column: 2;
@@ -643,16 +593,6 @@
   position: absolute;
   scale: 75%;
   z-index: 1;
-}
-
-.cuerpo__seccionRecomendaciones_imagen6 .cinta {
-  height: 25%;
-  position: relative;
-  top: -2px;
-  left: 40%;
-  z-index: 2;
-  -webkit-transform: rotate(130deg);
-          transform: rotate(130deg);
 }
 
 .cuerpo__seccionContacto {

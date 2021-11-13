@@ -92,7 +92,7 @@
 			background-size: cover;
 			display: grid;
 			grid-template-columns: 1fr 2fr 5fr 1fr;
-			grid-template-rows: 70px 300px 300px 300px 300px 300px 300px;
+			grid-template-rows: 80px auto auto auto auto auto auto;
 			grid-template-areas:
 			"margenIzq0 tituloRecomendaciones tituloRecomendaciones margenDer0" 
 			"margenIzq1 imagen1 texto1 margenDer1"
@@ -108,6 +108,7 @@
 				color: white;
 				border-bottom-style: solid;
 				border-bottom-color: white;
+				margin-bottom: 10px;
 			}
 
 			@for $i from -10 through 10 {
@@ -119,54 +120,46 @@
 			@for $i from 1 through 6 {
 				&_texto#{$i} { 
 					grid-area: texto#{$i};
-					background-color: rgba(255, 245, 227, 0);
-					margin: 10px 5px;
-					padding: 15px;
-					display: flex; 
-					align-items: center;
-					flex-direction: column;
-					justify-content: space-around;
-
-					div{
-						align-self: center;
-					}
-
-					p{
-						font-family: 'Caveat', cursive;
-						font-size: 4em;
-						color: white;
-						
-					}
-					
-					h6{
-						color: white;
-						text-align: right;
-						width: 100%;
-						font-size: 2em;
-						font-family: 'Caveat', cursive;
-					}
-
 				}
 			}
 
 			@for $i from 1 through 6 {
 				&_imagen#{$i} { 
 					grid-area: imagen#{$i};
-					margin: 10px 5px;
-					overflow: hidden;
-					
-					.foto{
-						height: 100%;
-						position: absolute; 
-						scale: 75%;
-						z-index: 1;
-					}
-
 				}
 			}
 
+			.textoRecomendaciones{
+				margin-block: 25px;
+				margin-right: 10px;
+				display: flex; 
+				align-items: center;
+				flex-direction: column;
+				div{
+					align-self: center;
+				}
+				p{
+					font-family: 'Caveat', cursive;
+					font-size: 4em;
+					color: white;					
+				}	
+				h6{
+					color: white;
+					text-align: right;
+					width: 100%;
+					font-size: 2em;
+					font-family: 'Caveat', cursive;
+					margin-block: 20px;
+				}
+			}
 
-
+			.imagenRecomendaciones{
+				margin-block: 30px;
+				margin-inline: 30px;
+				.foto{
+					width: 100%;
+				}
+			}
 		}
 		
 		&Contacto{
@@ -545,7 +538,7 @@
 			&Recomendaciones{
 
 				grid-template-columns:  40% 60% ;
-				grid-template-rows: 70px 200px 200px 200px 200px 200px 200px;
+				grid-template-rows: 70px auto auto auto auto auto auto;
 				grid-template-areas:
 				" tituloRecomendaciones tituloRecomendaciones " 
 				" imagen1 texto1 "
@@ -561,24 +554,15 @@
 					justify-content: center;
 				}
 
-				@for $i from 1 through 6 {
-					&_texto#{$i} { 
-				
-						h6{
-							font-size: 2.5em;
-						}
-	
+				.textoRecomendaciones{
+					h6{
+						font-size: 2.5em;
 					}
 				}
 
-				@for $i from 1 through 6 {
-					&_imagen#{$i} { 
-						.cinta{
-							display: none;
-						}
-					}
+				.imagenRecomendaciones{
+					margin-inline: 15px;
 				}
-
 			}
 					
 			&Contacto{
@@ -776,15 +760,7 @@
 				" imagen4 texto4 "
 				" imagen5 texto5 "
 				" imagen6 texto6 ";
-
-				@for $i from 1 through 6 {
-					&_imagen#{$i} { 
-						.cinta{
-							display: none;
-						}
-					}
-				}
-			
+				
 			}
 		}
 	}

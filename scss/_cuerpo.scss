@@ -1,10 +1,4 @@
 .cuerpo{
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: stretch;
-	
     &__contenedorPersonal{
 		background: url("../media/personal.webp");
 		background-size: cover;
@@ -12,10 +6,6 @@
 			display: flex;
 			justify-content: right;
 			background: linear-gradient(90deg,rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) 50%, rgba(0, 0, 0, 0.7));	
-			background-size: 100%;
-			background-position: top;
-			width: 100%;
-			margin: 0%;
 			height: 75vh;
 			.textoBienvenida{
 				display: flex;
@@ -41,34 +31,28 @@
 
 	&__conenedorImagenesCategorias{
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
 		background-color: rgb(255, 245, 227);
-		width: 100%;
 		div{
-			margin: 2%;
-		}
-		a{
-			text-decoration: none;
-			text-align: center;
-			p{
-				color: black;
-				font-size:1.5em;
-				letter-spacing: 0.1em;
-			}
-
-			img{
-				width: 100%;
-				filter: drop-shadow(0 4px 4px rgb(145, 145, 145));
-			}
-		}
-		div{
+			margin: 5% 2%;
 			transition: transform 0.25s;
-			margin-block: 5%;
+			a{
+				text-decoration: none;
+				p{
+					color: black;
+					font-size:1.5em;
+					letter-spacing: 0.1em;
+					text-align: center;
+				}
+				img{
+					width: 100%;
+					filter: drop-shadow(0 4px 4px rgb(145, 145, 145));
+				}
+			}
 		}
 		div:hover{
 			transform:scale(1.1,1.1); 
-	   }
+	   	}
+
 	}
 
 	&__seccion{
@@ -79,8 +63,14 @@
 			font-weight: 500;
 			margin: 0%;
 			padding-left: 5%;
+			color: white
 
 		}
+		&--formatoContenedorTitulo{
+			border-bottom-style: solid;
+			border-bottom-color: white;
+		}
+
 		&--formatoTextoContenido{
 			color: rgb(100, 100, 100);
 			font-size:1.5em;
@@ -102,13 +92,8 @@
 			"margenIzq5 imagen5 texto5 margenDer5"
 			"margenIzq6 imagen6 texto6 margenDer6";
 			
-
 			.tituloRecomendaciones{
-				grid-area: tituloRecomendaciones;
-				color: white;
-				border-bottom-style: solid;
-				border-bottom-color: white;
-				margin-bottom: 10px;
+				grid-area: tituloRecomendaciones;				
 			}
 
 			@for $i from -10 through 10 {
@@ -133,23 +118,17 @@
 				margin-block: 25px;
 				margin-right: 10px;
 				display: flex; 
-				align-items: center;
 				flex-direction: column;
-				div{
-					align-self: center;
-				}
-				p{
-					font-family: 'Caveat', cursive;
+				color: white;
+				p{			
 					font-size: 4em;
-					color: white;					
+					font-family: 'Caveat', cursive;				
 				}	
-				h6{
-					color: white;
+				h6{				
 					text-align: right;
-					width: 100%;
 					font-size: 2em;
-					font-family: 'Caveat', cursive;
 					margin-block: 20px;
+					font-family: 'Caveat', cursive;
 				}
 			}
 
@@ -166,20 +145,16 @@
 			background-image: url("../media/fondosSecciones/contacto.jpg");
 			background-repeat: no-repeat;
 			background-size: cover;
-
 			display: grid;
 			grid-template-columns: 3fr 5fr;
 			grid-template-rows: 70px 100%;
 			grid-template-areas:
 			"imagenContacto tituloContacto"
 			"imagenContacto textoContacto";
-			color: white;
 
 			.tituloContacto{
 				grid-area: tituloContacto;
 				background-color: rgba(0, 0, 0, 0.7);
-				border-bottom-style: solid;
-				border-bottom-color: white;
 			}
 			.imagenContacto{
 				grid-area: imagenContacto;			
@@ -189,21 +164,18 @@
 				padding-left: 5%;
 				background-color: rgba(0, 0, 0, 0.7);
 				padding-block: 2%;
-
+				color: white;
 				form{
 					display: flex;
 					flex-direction: column;
 					justify-content: space-between;
 					.centrado{
 						text-align: center;
-						padding-inline: 0px;
 						width: 60%;
 						margin-block: 5px;
 						input, select, textarea{
-							display: block;
 							width: 100%;
 							height: calc(1.5em + .75rem + 2px);
-							padding: 0px;
 							font-size: 1rem;
 							font-weight: 400;
 							line-height: 1.5;
@@ -217,13 +189,9 @@
 						button{
 							color: #fff;
 							background-color: #007bff;
-							border-color: #007bff;
 							cursor: pointer;
-			
 							display: inline-block;
 							font-weight: 400;
-							text-align: center;
-							vertical-align: middle;
 							border: 1px solid transparent;
 							padding: .375rem .75rem;
 							font-size: 1rem;
@@ -233,28 +201,22 @@
 					}
 				}
 			}
-
-
 		}
 
 		&Consultoria{
 			background-image: url("../media/fondosSecciones/consultoria.png");
 			background-repeat: no-repeat;
 			background-size: cover;
-
 			display: grid;
 			grid-template-columns: 3fr 5fr 1fr;
 			grid-template-rows: 70px 100%;
 			grid-template-areas:
 			"imagenConsultoria tituloConsultoria logosConsultoria"
 			"imagenConsultoria textoConsultoria logosConsultoria";
-			color: white;
-
+		
 			.tituloConsultoria{
 				grid-area: tituloConsultoria;
 				background-color: rgba(0, 0, 0, 0.7);
-				border-bottom-style: solid;
-				border-bottom-color: white;
 			}
 			.imagenConsultoria{
 				grid-area: imagenConsultoria;			
@@ -264,38 +226,36 @@
 				padding: 0px 20px 0px 25px;
 				background-color: rgba(0, 0, 0, 0.7);
 				letter-spacing: 1px;
-
+				color: white;
 				ul{
 					margin-block: 25px;
-				}
-
-				h2{
-					font-size: 2.5em;
-					margin: 0px;
-					font-weight: 500;
-				}
-
-				h3{
-					font-size: 2em;
-					margin: 0px;
-					font-weight: 300;
-					margin-top: 1.5%;
-				}
-				h4{
-					font-size: 1.5em;
-					margin-top: 5px;
-					font-weight: 500;
-				}
-				h5{
-					font-size: 1.2em;
-					margin: 0px;
-					font-weight: 300;
-				}
-				h6{
-					font-size: 1.2em;
-					margin: 0px;
-					font-weight: 300;
-					font-style: italic;
+					h2{
+						font-size: 2.5em;
+						margin: 0px;
+						font-weight: 500;
+					}
+					h3{
+						font-size: 2em;
+						margin: 0px;
+						font-weight: 300;
+						margin-top: 1.5%;
+					}
+					h4{
+						font-size: 1.5em;
+						margin-top: 5px;
+						font-weight: 500;
+					}
+					h5{
+						font-size: 1.2em;
+						margin: 0px;
+						font-weight: 300;
+					}
+					h6{
+						font-size: 1.2em;
+						margin: 0px;
+						font-weight: 300;
+						font-style: italic;
+					}
 				}
 			}
 			.logosConsultoria{
@@ -329,8 +289,6 @@
 			.tituloDocencia{
 				grid-area: tituloDocencia;
 				background-color: rgba(0, 0, 0, 0.7);
-				border-bottom-style: solid;
-				border-bottom-color: white;
 			}
 			.imagenDocencia{
 				grid-area: imagenDocencia;			
@@ -342,35 +300,33 @@
 				letter-spacing: 1px;
 				ul{
 					margin-block: 25px;
-				}
-
-				h2{
-					font-size: 2.5em;
-					margin: 0px;
-					font-weight: 500;
-				}
-
-				h3{
-					font-size: 2em;
-					margin: 0px;
-					font-weight: 300;
-					margin-top: 1.5%;
-				}
-				h4{
-					font-size: 1.5em;
-					margin-top: 5px;
-					font-weight: 500;
-				}
-				h5{
-					font-size: 1.2em;
-					margin: 0px;
-					font-weight: 300;
-				}
-				h6{
-					font-size: 1.2em;
-					margin: 0px;
-					font-weight: 300;
-					font-style: italic;
+					h2{
+						font-size: 2.5em;
+						margin: 0px;
+						font-weight: 500;
+					}
+					h3{
+						font-size: 2em;
+						margin: 0px;
+						font-weight: 300;
+						margin-top: 1.5%;
+					}
+					h4{
+						font-size: 1.5em;
+						margin-top: 5px;
+						font-weight: 500;
+					}
+					h5{
+						font-size: 1.2em;
+						margin: 0px;
+						font-weight: 300;
+					}
+					h6{
+						font-size: 1.2em;
+						margin: 0px;
+						font-weight: 300;
+						font-style: italic;
+					}
 				}
 			}
 		}
@@ -391,8 +347,6 @@
 			.tituloYoga{
 				grid-area: tituloYoga;
 				background-color: rgba(0, 0, 0, 0.7);
-				border-bottom-style: solid;
-				border-bottom-color: white;
 			}
 			.imagenYoga{
 				grid-area: imagenYoga;			
@@ -417,7 +371,6 @@
 					margin: 0px;
 					font-weight: 500;
 				}
-
 				h3{
 					font-size: 2em;
 					margin: 0px;
@@ -442,23 +395,9 @@
 				}
 			}
 		}
-
-
-	}
-	
-
-	table {
-		border-collapse: collapse;
-		border-color: blue;
-		th {
-			background-color:blue;
-			color: white;
-		}
 	}
 }
 
-
- 
 
 
 
@@ -467,26 +406,15 @@
 @media only screen and (max-width: 575px) {
 
 	.cuerpo{
-		width: 100%;
 		&__contenedorPersonal{
-			flex-direction: column;
-			overflow: hidden;
-			height: auto;
-			background-size: cover;
 			background-position: 15%;
-
 			.contenedorTexto{
-				margin:0px ;
-				padding: 0px;
 				justify-content: center;
 				background-color:rgba(0, 0, 0, 0.5) ;
-				/*background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) 20vh,rgba(0, 0, 0, 0.7) 60vh, rgba(0, 0, 0, 0));*/
 				.textoBienvenida{
 					width: 90%;
 					text-align: center;
 					div{
-						padding-block: 5vh;
-						color: white;
 						h2{
 							font-size: 6em;
 						}
@@ -498,13 +426,11 @@
 						}	
 					}
 				}
-			
 			}
-
 		}
+
 		&__conenedorImagenesCategorias{
 			flex-direction: column;
-			padding-inline:0%;
 			div{
 				margin:5%
 			}
@@ -519,16 +445,10 @@
 
 
 		&__seccion{
-			padding: 0%;
 			&--formatoTituloSeccion{
 				padding: 0px;
 				font-size: 5em;
-				letter-spacing: 0.1em;
-				font-weight: 500;
-	
 				text-align: center;
-				margin-inline: 50px;
-	
 			}
 			&--formatoTextoContenido{
 				color: rgb(100, 100, 100);
@@ -601,10 +521,6 @@
 					}
 				}
 
-				.imagenConsultoria{
-					grid-area: imagenConsultoria;			
-				}
-
 				.tituloConsultoria{
 					display: flex;
 					flex-direction: column;
@@ -615,31 +531,30 @@
 					padding: 10px 20px 10px 20px;
 					ul{
 						margin-block: 15px;
-					}
-
-					h2{
-						font-size: 4.5em;
-					}
-	
-					h3{
-						font-size: 3em;
-						margin-top: 5px;
-					}
-					h4{
-						font-size: 2.5em;
-						letter-spacing: 1px;
-						font-weight: 400;
-					}
-					h5{
-						font-size: 2.2em;
-						margin: 0px;
-						font-weight: 300;
-					}
-					h6{
-						font-size: 2.2em;
-						margin: 0px;
-						font-weight: 300;
-						font-style: italic;
+						h2{
+							font-size: 4.5em;
+						}
+		
+						h3{
+							font-size: 3em;
+							margin-top: 5px;
+						}
+						h4{
+							font-size: 2.5em;
+							letter-spacing: 1px;
+							font-weight: 400;
+						}
+						h5{
+							font-size: 2.2em;
+							margin: 0px;
+							font-weight: 300;
+						}
+						h6{
+							font-size: 2.2em;
+							margin: 0px;
+							font-weight: 300;
+							font-style: italic;
+						}
 					}
 				}
 			}
@@ -658,34 +573,31 @@
 					padding: 10px 20px 10px 20px;
 					ul{
 						margin-block: 15px;
+						h2{
+							font-size: 4.5em;
+						}	
+						h3{
+							font-size: 3em;
+							margin-top: 5px;
+						}
+						h4{
+							font-size: 2.5em;
+							letter-spacing: 1px;
+							font-weight: 400;
+						}
+						h5{
+							font-size: 2.2em;
+							margin: 0px;
+							font-weight: 300;
+						}
+						h6{
+							font-size: 2.2em;
+							margin: 0px;
+							font-weight: 300;
+							font-style: italic;
+						}
 					}
-
-					h2{
-						font-size: 4.5em;
-					}
-	
-					h3{
-						font-size: 3em;
-						margin-top: 5px;
-					}
-					h4{
-						font-size: 2.5em;
-						letter-spacing: 1px;
-						font-weight: 400;
-					}
-					h5{
-						font-size: 2.2em;
-						margin: 0px;
-						font-weight: 300;
-					}
-					h6{
-						font-size: 2.2em;
-						margin: 0px;
-						font-weight: 300;
-						font-style: italic;
-					}
-				}
-				
+				}		
 			}
 
 			&Yoga{
